@@ -1,0 +1,100 @@
+/* src/css/Hero.css */
+
+.hero {
+  background: linear-gradient(to bottom, #f5f9ff, #ffffff);
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #0a58ca, #004aad);
+  color: white;
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 85, 255, 0.1);
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #004aad, #003b94);
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  flex: 1 1 500px;
+  text-align: center;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
