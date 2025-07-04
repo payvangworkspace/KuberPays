@@ -1,0 +1,74 @@
+.modern-stats-section {
+  background: linear-gradient(135deg, #020c1b, #031b3a);
+  color: #ffffff;
+  padding: 5rem 2rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.modern-stats-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.modern-stats-subtitle {
+  font-size: 1.1rem;
+  color: #b0c4d4;
+  margin-bottom: 3rem;
+}
+
+.modern-stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.modern-stat-box {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  min-width: 200px;
+  max-width: 240px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.modern-stat-box:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-color: #38bdf8;
+  box-shadow: 0 12px 40px rgba(56, 189, 248, 0.25);
+}
+
+.modern-stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #38bdf8;
+  margin-bottom: 0.6rem;
+}
+
+.modern-stat-label {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .modern-stats-title {
+    font-size: 2rem;
+  }
+
+  .modern-stat-box {
+    padding: 1.5rem;
+  }
+
+  .modern-stat-value {
+    font-size: 2rem;
+  }
+}

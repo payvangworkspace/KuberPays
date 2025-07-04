@@ -13,6 +13,7 @@ import { Route } from 'react-router-dom';
 import InnovationSection from './Components/InnovationSection';
 import EnterpriseSuite from './Components/EnterpriseSuite';
 import IndustriesSection from './Components/IndustriesSection';
+import AnimatedStats from './Components/AnimatedStats';
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -24,6 +25,7 @@ function Home(){
 <InnovationSection/>
 <EnterpriseSuite/>
 <IndustriesSection/>
+<AnimatedStats/>
 </>
 
 
