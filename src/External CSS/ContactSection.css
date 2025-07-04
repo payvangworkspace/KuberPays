@@ -1,0 +1,105 @@
+/* ================================
+   Contact Section Container
+================================== */
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 100px;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+    justify-items: center;
+}
+
+/* ================================
+   Contact Card
+================================== */
+.contact-section__card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    max-width: 350px;
+}
+
+.contact-section__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   Icon Styling
+================================== */
+.contact-section__icon {
+    font-size: 32px;
+    color: #ff4500;
+    padding: 12px;
+    border-radius: 50%;
+    background: rgba(255, 69, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-section__card:hover .contact-section__icon {
+    background: rgba(255, 69, 0, 0.8);
+    color: white;
+}
+
+/* ================================
+   Contact Info Text
+================================== */
+.contact-section__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-section__main {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 3px;
+}
+
+.contact-section__subtitle {
+    font-size: 14px;
+    color: gray;
+}
+
+/* ================================
+   Responsive Layout
+================================== */
+@media (max-width: 768px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 10px;
+    }
+
+    .contact-section__card {
+        max-width: 90%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-section__icon {
+        margin-bottom: 15px;
+    }
+}
