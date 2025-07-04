@@ -30,7 +30,7 @@ const Navbar = () => {
       submenu: ["Payment Gateway", "Invoices", "Virtual Account","White Label Solution"],
       links: ["/payment-gateway", "/invoices", "/virtual-account","/white-label"],
     },
-    { title: "Resources", submenu: ["Solutions & Features", "FAQ's", "Pricing","Terms & Conditions"], link: "/services" },
+    { title: "Resources", submenu: ["Solutions & Features", "FAQ's", "Pricing","Terms & Conditions","Privacy Policy"], links: ["/features", "/faqs", "/pricing ","/terms","/privacy-policy"]},
     {
       title: "Company",
       submenu: [
@@ -38,14 +38,9 @@ const Navbar = () => {
         "Contact Us",
       ],
       links: [
-        "/industries",
-        "/finance",
-        "/capital-market",
-        "/enterprise-tech",
-        "/manufacturing",
-        "/healthcare",
-        "/higher-education",
-        "/logistics",
+        "/about",
+        "/contact"
+       
       ],
     },
    
