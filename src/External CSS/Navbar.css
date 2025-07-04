@@ -1,5 +1,4 @@
-/* src/css/Navbar.css */
-
+/* Reset and base */
 * {
   margin: 0;
   padding: 0;
@@ -7,155 +6,402 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar {
-  background: #ffffff;
+.enhanced-navbar {
   position: sticky;
   top: 0;
-  width: 100%;
-  z-index: 999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: box-shadow 0.3s ease;
+  background: #ffffff;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 75px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
 }
 
-.navbar-container {
-  max-width: 1280px;
-  margin: auto;
-  padding: 0.8rem 2rem;
+.navbar-logo {
+  height: 50px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 5px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 2px;
+  width: 0%;
+  background-color: #0056b3;
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar-link:hover {
+  color: #0056b3;
+}
+
+.dropdown-icon {
+  font-size: 0.7rem;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-item:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-width: 220px;
+  padding: 10px 0;
+  z-index: 1001;
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  font-size: 15px;
+  color: #333;
+  white-space: nowrap;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f8ff;
+  color: #0056b3;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 13px;
+  gap: 5px;
+  color: #444;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-info span:hover {
+  color: #0056b3;
+  transform: translateX(3px);
+}
+
+.icon {
+  color: #0056b3;
+  font-size: 14px;
+}
+
+/* Navbar.css */
+
+.enhanced-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: linear-gradient(135deg, #0f1e44, #1f3b6f);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.navbar-logo a {
+.navbar-left {
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease;
 }
 
-.navbar-logo a:hover {
-  transform: scale(1.05);
+.navbar-logo {
+  width: 160px;
+  height: auto;
+  cursor: pointer;
 }
 
-.logo-img {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-/* NAV LINKS */
-.nav-links {
+.navbar-menu {
   display: flex;
-  align-items: center;
+  list-style: none;
   gap: 2rem;
-  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
-  color: #1f1f1f;
+.navbar-item {
+  position: relative;
+}
+
+.navbar-link {
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #0a58ca;
-  transition: width 0.3s;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.nav-links a:hover {
-  color: #0a58ca;
-}
-
-/* LOGIN BUTTON */
-.login-btn {
-  background: linear-gradient(to right, #0a58ca, #004aad);
-  color: white;
-  padding: 0.5rem 1.4rem;
-  border-radius: 30px;
-  border: none;
-  font-weight: 600;
   cursor: pointer;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 85, 255, 0.1);
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
-.login-btn:hover {
-  background: linear-gradient(to right, #004aad, #003b94);
-  transform: translateY(-2px);
+.navbar-link:hover {
+  color: #4dcfff;
 }
 
-/* MENU ICON */
-.menu-icon {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
+.direct-link {
+  text-decoration: none;
+}
+
+.dropdown-icon {
   transition: transform 0.3s ease;
 }
 
-.menu-icon:hover {
-  transform: rotate(90deg);
+.navbar-item:hover .dropdown-icon {
+  transform: rotate(180deg);
 }
 
-/* MOBILE STYLES */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 0;
-    gap: 1.5rem;
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #1c2e50;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 0;
+  z-index: 999;
+}
+
+.dropdown-item {
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #26416d;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+  transition: color 0.3s;
+}
+
+.contact-info span:hover {
+  color: #4dcfff;
+}
+
+.icon {
+  font-size: 1rem;
+  color: #4dcfff;
+}
+
+.enhanced-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: whitesmoke;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+.navbar-link {
+  color: #333;
+}
+
+.navbar-link:hover {
+  color: #0077cc;
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.phone-contact{
+  cursor: pointer;
+}
+
+
+
+
+.contact-info span {
+  color: #333;
+}
+
+.contact-info span:hover {
+  color: #0077cc;
+}
+
+.icon {
+  color: #0077cc;
+}
+/* Mobile responsiveness */
+.mobile-menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #0077cc;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .navbar-menu {
     display: none;
-    animation: slideDown 0.3s ease forwards;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 999;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
-  .nav-links.active {
+  .navbar-menu.open {
     display: flex;
   }
 
-  .menu-icon {
+  .navbar-item {
+    margin-bottom: 1rem;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    padding-left: 1rem;
+    background-color: transparent;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
     display: block;
   }
+}
 
-  @keyframes slideDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@media (max-width: 576px) {
+  .navbar-logo {
+    width: 120px;
   }
 }
+@media (max-width: 992px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 999;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-.logo-img{
-    height: 100px;
-    width: 120px;
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-item {
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
+
+  .navbar-link {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .dropdown-menu {
+    padding: 0.3rem 1rem;
+    background: #f9f9f9;
+    box-shadow: none;
+  }
+
+  .dropdown-item {
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+    border-bottom: 1px dashed #ddd;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
 }
-
-
-
-
