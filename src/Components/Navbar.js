@@ -28,7 +28,7 @@ const Navbar = () => {
     {
       title: "Products",
       submenu: ["Payment Gateway", "Invoices", "Virtual Account","White Label Solution"],
-      links: ["/about-us", "/mission-vision", "/why-choose-us"],
+      links: ["/payment-gateway", "/invoices", "/virtual-account","/white-label"],
     },
     { title: "Resources", submenu: ["Solutions & Features", "FAQ's", "Pricing","Terms & Conditions"], link: "/services" },
     {
