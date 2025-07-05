@@ -14,6 +14,7 @@ import InnovationSection from './Components/InnovationSection';
 import EnterpriseSuite from './Components/EnterpriseSuite';
 import IndustriesSection from './Components/IndustriesSection';
 import AnimatedStats from './Components/AnimatedStats';
+import RequestCallback from './Components/RequestCallback';
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -25,7 +26,9 @@ function Home(){
 <InnovationSection/>
 <EnterpriseSuite/>
 <IndustriesSection/>
+{/* <RequestCallback/> */}
 <AnimatedStats/>
+<Footer/>
 </>
 
 
