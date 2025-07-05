@@ -1,53 +1,71 @@
 /* Hero Banner Styling */
-
-.payment-hero {
+.payment-hero-kb {
   background: cadetblue;
   color: white;
   padding: 4rem 2rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   text-align: center;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  /* max-width: 1200px; */
 }
 
-.hero-content {
+.hero-content-kb {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.hero-title {
+.hero-title-kb {
   font-size: 2.75rem;
   font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.2;
+  color: #ffffff;
 }
 
-.hero-subtitle {
+.hero-subtitle-kb {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #dbeafe;
   font-weight: 500;
+  line-height: 1.6;
 }
 
-.hero-btn {
+.hero-btn-parent-kb {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-btn-kb {
   background: white;
   color: #1e3a8a;
   font-size: 1rem;
   font-weight: 600;
-  border:none;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: 0.3s;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
-.hero-btn-parent{
-    display: flex;
-    border:none;
-    width: 100vw;
-    justify-content: center;
-}
-
-.hero-btn:hover {
+.hero-btn-kb:hover {
   background-color: #f3f4f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title-kb {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle-kb {
+    font-size: 1.05rem;
+  }
+
+  .hero-btn-kb {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
+  }
 }

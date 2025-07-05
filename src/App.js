@@ -20,8 +20,8 @@ import AnimatedStats from './Components/AnimatedStats';
 // import DevelopersSection from './Components/DevelopersSection';
 // =======
 // import PaymentGateway from './Components/PaymentGatewayInfo';
-// import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
-// import PaymentGatewayHero from './Components/PaymentGatewayHero';
+import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
+import PaymentGatewayHero from './Components/PaymentGatewayHero';
 // >>>>>>> Main
 
 function Home(){
@@ -35,7 +35,7 @@ function Home(){
 <EnterpriseSuite/>
 <IndustriesSection/>
 {/* <RequestCallback/> */}
-<ClientUnderstanding/>
+{/* <ClientUnderstanding/> */}
 <AnimatedStats/>
 <Footer/>
 </>
@@ -44,33 +44,27 @@ function Home(){
   )
 }
 
-// <<<<<<< development
-// function DevelopersComponent(){
-//   return (
-// <>
-// <Navbar/>
-// <DevelopersSection/>
 
-// =======
-// function Payment(){
-//   document.title="PaymentGateway | Kuberpays"
-//   return(
-// <>
-// <Navbar/>
-// <PaymentGatewayHero/>
-// <PaymentGatewayInfo/>
-// </>
-//   )
-// }
-// >>>>>>> Main
-
-
+function DevelopersComponent(){
+  return (
+<>
+<Navbar/>
+{/* <DevelopersSection/> */}
 </>
-
-
-
   )
 }
+
+function Payment(){
+  document.title="PaymentGateway | Kuberpays"
+  return(
+<>
+<Navbar/>
+<PaymentGatewayHero/>
+<PaymentGatewayInfo/>
+ </>
+  )
+}
+
 
 
 function App() {
@@ -80,11 +74,10 @@ function App() {
      
         <Routes>
           <Route path="/" element={<Home />} />
-// <<<<<<< development
-//              <Route path="/developers" element={<DevelopersComponent />} />
-// =======
-//           <Route path="/payment-gateway" element={<Payment />} />
-// >>>>>>> Main
+            <Route path="/developers" element={<DevelopersComponent />} />
+
+        <Route path="/payment-gateway" element={<Payment />} />
+
        </Routes>
       </BrowserRouter>
     </div>
