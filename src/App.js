@@ -16,6 +16,7 @@ import IndustriesSection from './Components/IndustriesSection';
 import AnimatedStats from './Components/AnimatedStats';
 import RequestCallback from './Components/RequestCallback';
 import ClientUnderstanding from './Components/ClientUnderstanding';
+import DevelopersSection from './Components/DevelopersSection';
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -37,7 +38,20 @@ function Home(){
   )
 }
 
+function DevelopersComponent(){
+  return (
+<>
+<Navbar/>
+<DevelopersSection/>
 
+
+
+</>
+
+
+
+  )
+}
 
 
 function App() {
@@ -47,6 +61,7 @@ function App() {
      
         <Routes>
           <Route path="/" element={<Home />} />
+             <Route path="/developers" element={<DevelopersComponent />} />
        </Routes>
       </BrowserRouter>
     </div>

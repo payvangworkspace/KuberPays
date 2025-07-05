@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content container">
         <div className="footer-left">
           <img className="logo logo-footer" src='../logo2.png'/>
-          <p>Swift Code: <strong>UNBQGB22</strong></p>
+          {/* <p>Swift Code: <strong>KUBERPAYMENT</strong></p> */}
           <p>
             <FaMapMarkerAlt className="icon" /> Suite 4, Europe House, Packhorse Road,<br />
             Gerrard Cross, Buckinghamshire, SL9 8BQ, United Kingdom
