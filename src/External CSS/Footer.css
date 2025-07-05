@@ -1,82 +1,77 @@
 .footer {
-  background: linear-gradient(145deg, #0a0a23, #0f1c38);
-  color: #f1f5f9;
-  padding: 4rem 2rem 2rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-top: 1px solid #e6e6e6;
+  font-family: 'Inter', sans-serif;
+  color: #406b7c;
 }
 
-.footer-main {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-logo {
-  width: 130px;
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
-}
-
-.footer-col h4 {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-col ul li {
-  margin-bottom: 0.6rem;
-}
-
-.footer-col ul li a {
-  color: #cbd5e1;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-  color: #ffffff;
-}
-
-.footer-col p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #cbd5e1;
-}
-
-.footer-brand {
-  max-width: 280px;
-}
-
-.social-icons {
+.footer-content {
   display: flex;
-  gap: 1rem;
-  margin-top: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.social-icons a {
-  color: #cbd5e1;
-  font-size: 1.3rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+.footer-left {
+  flex: 1;
+  min-width: 280px;
+}
+.logo-footer{
+
+height: 90px;
+width: 110px;
+/* height:"100px",width:"120px" */
+/* border: 2px solid red; */
+
+
+
+
+
 }
 
-.social-icons a:hover {
-  color: #ffffff;
-  transform: translateY(-2px);
+.footer-left .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #003c57;
+  margin-bottom: 0.5rem;
 }
 
-.footer-bottom {
-  text-align: center;
-  margin-top: 2rem;
+.footer-left p {
+  margin: 0.3rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-left .icon {
+  color: #0077b6;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+  min-width: 200px;
+  margin-top: 1rem;
+}
+
+.footer-right .copyright {
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: #7a9ba9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-top: 2rem;
+  }
 }

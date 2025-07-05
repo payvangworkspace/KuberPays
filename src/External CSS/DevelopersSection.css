@@ -1,0 +1,274 @@
+.developers-section {
+  background: #f9fbfe;
+  padding: 6rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.dev-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dev-content h5 {
+  font-size: 0.9rem;
+  color: #0ea5e9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.dev-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+}
+
+.dev-content p {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+/* Grid */
+.dev-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Cards */
+.dev-card {
+  background: #ffffff;
+  padding: 2rem 1.8rem;
+  border-radius: 16px;
+  width: 260px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: default;
+  border: 1px solid #e2e8f0;
+}
+
+.dev-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(14, 165, 233, 0.15);
+  border-color: #0ea5e9;
+}
+
+/* Icon */
+.dev-icon {
+  color: #0ea5e9;
+  margin-bottom: 1.2rem;
+}
+
+/* Title */
+.dev-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.7rem;
+}
+
+/* Description */
+.dev-card p {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dev-content h2 {
+    font-size: 2rem;
+  }
+
+  .dev-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+.dev-section {
+  background: linear-gradient(to bottom, #f8fbff, #e0f2ff);
+  padding: 5rem 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+}
+
+.dev-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dev-subtitle {
+  color: #0ea5e9;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.6rem;
+}
+
+.dev-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.dev-description {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+/* Grid layout */
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card design */
+.dev-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.07);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.dev-card:hover {
+  transform: translateY(-6px);
+  border-color: #0ea5e9;
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
+  background: linear-gradient(135deg, #ffffff, #f1f9ff);
+}
+
+/* Icon */
+.dev-icon {
+  color: #0ea5e9;
+  margin-bottom: 1.2rem;
+}
+
+/* Title */
+.dev-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #1e293b;
+}
+
+/* Description */
+.dev-card p {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dev-title {
+    font-size: 2rem;
+  }
+
+  .dev-description {
+    font-size: 1rem;
+  }
+}
+.dev-section {
+  background: #ffffff;
+  padding: 5rem 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+}
+
+.dev-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dev-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.dev-header h5 {
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.dev-header h2 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.dev-header p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.dev-cta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.dev-cta:hover {
+  background: #2563eb;
+}
+
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.dev-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dev-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
+}
+
+.dev-icon {
+  color: #3b82f6;
+  margin-bottom: 1.25rem;
+}
+
+.dev-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.dev-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}

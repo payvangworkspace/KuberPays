@@ -14,9 +14,15 @@ import InnovationSection from './Components/InnovationSection';
 import EnterpriseSuite from './Components/EnterpriseSuite';
 import IndustriesSection from './Components/IndustriesSection';
 import AnimatedStats from './Components/AnimatedStats';
-import PaymentGateway from './Components/PaymentGatewayInfo';
-import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
-import PaymentGatewayHero from './Components/PaymentGatewayHero';
+// <<<<<<< development
+// import RequestCallback from './Components/RequestCallback';
+// import ClientUnderstanding from './Components/ClientUnderstanding';
+// import DevelopersSection from './Components/DevelopersSection';
+// =======
+// import PaymentGateway from './Components/PaymentGatewayInfo';
+// import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
+// import PaymentGatewayHero from './Components/PaymentGatewayHero';
+// >>>>>>> Main
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -28,21 +34,41 @@ function Home(){
 <InnovationSection/>
 <EnterpriseSuite/>
 <IndustriesSection/>
+{/* <RequestCallback/> */}
+<ClientUnderstanding/>
 <AnimatedStats/>
+<Footer/>
 </>
 
 
   )
 }
 
-function Payment(){
-  document.title="PaymentGateway | Kuberpays"
-  return(
-<>
-<Navbar/>
-<PaymentGatewayHero/>
-<PaymentGatewayInfo/>
+// <<<<<<< development
+// function DevelopersComponent(){
+//   return (
+// <>
+// <Navbar/>
+// <DevelopersSection/>
+
+// =======
+// function Payment(){
+//   document.title="PaymentGateway | Kuberpays"
+//   return(
+// <>
+// <Navbar/>
+// <PaymentGatewayHero/>
+// <PaymentGatewayInfo/>
+// </>
+//   )
+// }
+// >>>>>>> Main
+
+
 </>
+
+
+
   )
 }
 
@@ -54,7 +80,11 @@ function App() {
      
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/payment-gateway" element={<Payment />} />
+// <<<<<<< development
+//              <Route path="/developers" element={<DevelopersComponent />} />
+// =======
+//           <Route path="/payment-gateway" element={<Payment />} />
+// >>>>>>> Main
        </Routes>
       </BrowserRouter>
     </div>
