@@ -1,0 +1,87 @@
+/* Payment Gateway Info Section */
+
+.payment-info-section {
+  background-color: #f9fafb;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.payment-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.payment-info-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.payment-info-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.payment-info-description {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.payment-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.payment-info-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.payment-info-item p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+/* Image Section */
+.payment-info-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.payment-info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.payment-info-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .payment-info-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .payment-info-content {
+    text-align: left;
+  }
+
+  .payment-info-image {
+    margin-top: 2rem;
+  }
+}

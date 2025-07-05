@@ -14,6 +14,9 @@ import InnovationSection from './Components/InnovationSection';
 import EnterpriseSuite from './Components/EnterpriseSuite';
 import IndustriesSection from './Components/IndustriesSection';
 import AnimatedStats from './Components/AnimatedStats';
+import PaymentGateway from './Components/PaymentGatewayInfo';
+import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
+import PaymentGatewayHero from './Components/PaymentGatewayHero';
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -32,7 +35,16 @@ function Home(){
   )
 }
 
-
+function Payment(){
+  document.title="PaymentGateway | Kuberpays"
+  return(
+<>
+<Navbar/>
+<PaymentGatewayHero/>
+<PaymentGatewayInfo/>
+</>
+  )
+}
 
 
 function App() {
@@ -42,6 +54,7 @@ function App() {
      
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/payment-gateway" element={<Payment />} />
        </Routes>
       </BrowserRouter>
     </div>
