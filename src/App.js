@@ -17,11 +17,16 @@ import AnimatedStats from './Components/AnimatedStats';
 // <<<<<<< development
 // import RequestCallback from './Components/RequestCallback';
 // import ClientUnderstanding from './Components/ClientUnderstanding';
-// import DevelopersSection from './Components/DevelopersSection';
+import DevelopersSection from './Components/DevelopersSection';
 // =======
 // import PaymentGateway from './Components/PaymentGatewayInfo';
 import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
 import PaymentGatewayHero from './Components/PaymentGatewayHero';
+import IntegrationSection from './Components/IntegrationSection';
+import AboutUsBanner from './Components/AboutUsBanner';
+import AboutUs from './Components/AboutUs';
+import { InvoiceBanner } from './Components/InvoiceBanner';
+import InvoicingContent from './Components/InvoiceContent';
 // >>>>>>> Main
 
 function Home(){
@@ -50,9 +55,45 @@ function DevelopersComponent(){
 <>
 <Navbar/>
 {/* <DevelopersSection/> */}
+<IntegrationSection/>
+<Footer/>
 </>
   )
 }
+
+
+function AboutUsComponent(){
+  return (
+<>
+<Navbar/>
+<AboutUsBanner/>
+<AboutUs/>
+<Footer/>
+
+
+</>
+
+
+  )
+}
+
+function InvoiceComponent(){
+  return (
+    <>
+  
+    <Navbar/>
+    <InvoiceBanner/>
+    <InvoicingContent/>
+    
+    <Footer/>
+    
+    
+    
+    </>
+  )
+}
+
+
 
 function Payment(){
   document.title="PaymentGateway | Kuberpays"
@@ -61,6 +102,7 @@ function Payment(){
 <Navbar/>
 <PaymentGatewayHero/>
 <PaymentGatewayInfo/>
+<Footer/>
  </>
   )
 }
@@ -77,7 +119,8 @@ function App() {
             <Route path="/developers" element={<DevelopersComponent />} />
 
         <Route path="/payment-gateway" element={<Payment />} />
-
+        <Route path="/about" element={<AboutUsComponent/>}/>
+        <Route path="/invoices" element={<InvoiceComponent/>}/>
        </Routes>
       </BrowserRouter>
     </div>
