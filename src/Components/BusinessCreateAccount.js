@@ -15,7 +15,7 @@ const BusinessCreateAccount = () => {
       <div className="business-create-container">
         <h2 className="business-create-title">Join 493+ Businesses Today!</h2>
         <p className="business-create-subtitle">
-          Start your journey with KivaPays and unlock seamless payment solutions.
+          Start your journey with KuberPays and unlock seamless payment solutions.
         </p>
         <button className="business-create-button" onClick={redirectToSignUp}>
           <FaUserPlus className="button-icon" /> Create Your Account
