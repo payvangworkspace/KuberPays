@@ -1,0 +1,162 @@
+.dev-integration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+ 
+.dev-integration-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+ 
+.dev-integration-content {
+  width: 50%;
+  text-align: left;
+}
+ 
+.dev-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+ 
+.dev-description, .dev-sub-heading, .dev-final-note {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+ 
+.dev-integration-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+ 
+.dev-technology-icons {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+ 
+.dev-tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+ 
+.dev-tech-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+ 
+.dev-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+ 
+.dev-tech-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+@media (max-width: 1024px) {
+  .dev-integration-card {
+    flex-direction: column;
+    width: 90%;
+    padding: 30px;
+  }
+
+  .dev-integration-content, .dev-technology-icons {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dev-technology-icons {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dev-integration-container {
+    padding: 30px;
+  }
+
+  .dev-title {
+    font-size: 2rem;
+  }
+
+  .dev-description, .dev-sub-heading, .dev-final-note {
+    font-size: 1rem;
+  }
+
+  .dev-integration-list {
+    font-size: 1rem;
+    padding-left: 15px;
+  }
+
+  .dev-technology-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dev-tech-item {
+    padding: 15px;
+  }
+
+  .dev-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-integration-card {
+    padding: 20px;
+  }
+
+  .dev-title {
+    font-size: 1.8rem;
+  }
+
+  .dev-description, .dev-sub-heading, .dev-final-note {
+    font-size: 0.9rem;
+  }
+
+  .dev-integration-list {
+    font-size: 0.9rem;
+  }
+
+  .dev-technology-icons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .dev-tech-item {
+    padding: 10px;
+  }
+
+  .dev-icon {
+    font-size: 2rem;
+  }
+}

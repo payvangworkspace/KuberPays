@@ -1,0 +1,173 @@
+.invoicing-section {
+    max-width: 900px;
+    margin: 40px  auto;
+    margin-bottom: 0px;
+    padding: 30px;
+    padding-bottom: 0px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+    background: none; /* No background */
+    border-radius: 0; /* No rounded corners */
+    box-shadow: none; /* No shadow */
+    /* border: 2px solid red; */
+
+}
+
+.invoicing-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0b2154;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+    width: 100%;
+    /* border: 2px solid orange; */
+
+}
+
+.invoicing-content {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    /* border: 2px solid blue; */
+
+
+}
+
+.invoicing-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    /* border: 2px solid brown; */
+
+}
+
+.invoicing-content .generate-invoice-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    /* border: 2px solid pink; */
+  
+}
+
+.invoicing-content .generate-invoice-button:hover {
+    background: #0056b3;
+}
+
+.invoicing-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px; 
+    padding: 10px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    background: #ffffff; 
+    /* border: 2px solid green; */
+
+}
+
+.invoicing-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* border: 2px solid violet; */
+
+}
+
+.invoice-download-button {
+    display: inline-block;
+    background: #28a745; /* Slight green */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 85px;
+    /* border: 2px solid orangered; */
+
+}
+
+.invoice-download-button:hover {
+    background: #B3EB1B; /* Darker green */
+    transform: scale(1.05);
+}
+
+.invoice-container {
+    width: 100%; 
+    margin-top: 20px;
+    text-align: left; 
+    display: block; 
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .invoicing-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .invoicing-title {
+        font-size: 24px;
+    }
+
+    .invoicing-content p {
+        font-size: 14px;
+    }
+
+    .invoicing-content .generate-invoice-button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .invoicing-image img {
+        max-width: 80%;
+    }
+    .invoicing-image{
+        margin-left: 0;
+    }
+}
+.signup-container{
+    /* border:2px solid blue; */
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+
+
+.signup-button {
+    background: #28a745;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    /* margin-left: 85px; */
+    /* margin-top: 20px; */
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: background .3s ease-in-out, transform .2s;
+     /* border: 2px solid orangered; */
+}

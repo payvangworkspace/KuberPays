@@ -40,7 +40,7 @@ const InnovationSection = () => {
       {/* Top Section */}
       <div className="top-content" data-aos="fade-up">
         <div className="headline">
-          <h5>KIVAPAYS</h5>
+          <h5>KUBERPAYS</h5>
           <h2>"Smarter Payments, Trusted by Thousands"</h2>
         </div>
         <p className="description">

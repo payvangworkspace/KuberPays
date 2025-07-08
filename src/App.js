@@ -17,12 +17,22 @@ import AnimatedStats from './Components/AnimatedStats';
 // <<<<<<< development
 // import RequestCallback from './Components/RequestCallback';
 // import ClientUnderstanding from './Components/ClientUnderstanding';
-// import DevelopersSection from './Components/DevelopersSection';
+import DevelopersSection from './Components/DevelopersSection';
 // =======
 // import PaymentGateway from './Components/PaymentGatewayInfo';
-// import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
-// import PaymentGatewayHero from './Components/PaymentGatewayHero';
+import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
+import PaymentGatewayHero from './Components/PaymentGatewayHero';
+import IntegrationSection from './Components/IntegrationSection';
+import AboutUsBanner from './Components/AboutUsBanner';
+import AboutUs from './Components/AboutUs';
+import { InvoiceBanner } from './Components/InvoiceBanner';
+import InvoicingContent from './Components/InvoiceContent';
 // >>>>>>> Main
+import BusinessCreateAccount from './Components/BusinessCreateAccount';
+import { VirtualBanner } from './Components/VirtualBanner';
+import VirtualContent from './Components/VirtualContent';
+import { WhiteLabelBanner } from './Components/WhiteLabelBanner';
+import WhiteLabelContent from './Components/WhiteLabelContent';
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -35,7 +45,7 @@ function Home(){
 <EnterpriseSuite/>
 <IndustriesSection/>
 {/* <RequestCallback/> */}
-<ClientUnderstanding/>
+{/* <ClientUnderstanding/> */}
 <AnimatedStats/>
 <Footer/>
 </>
@@ -44,33 +54,106 @@ function Home(){
   )
 }
 
-// <<<<<<< development
-// function DevelopersComponent(){
-//   return (
-// <>
-// <Navbar/>
-// <DevelopersSection/>
 
-// =======
-// function Payment(){
-//   document.title="PaymentGateway | Kuberpays"
-//   return(
-// <>
-// <Navbar/>
-// <PaymentGatewayHero/>
-// <PaymentGatewayInfo/>
-// </>
-//   )
-// }
-// >>>>>>> Main
+function DevelopersComponent(){
+  return (
+<>
+<Navbar/>
+{/* <DevelopersSection/> */}
+<IntegrationSection/>
+<Footer/>
+</>
+  )
+}
+
+
+function AboutUsComponent(){
+  return (
+<>
+<Navbar/>
+<AboutUsBanner/>
+<AboutUs/>
+<Footer/>
 
 
 </>
 
 
-
   )
 }
+
+function InvoiceComponent(){
+  return (
+    <>
+  
+    <Navbar/>
+    <InvoiceBanner/>
+    <InvoicingContent/>
+    <BusinessCreateAccount/>
+    
+    <Footer/>
+    
+    
+    
+    </>
+  )
+}
+
+
+function VirtualAccountComponent(){
+
+  return(
+    <>
+    <Navbar/>
+<VirtualBanner/>    
+    <VirtualContent/>
+    <BusinessCreateAccount/>
+    <Footer/>
+    
+    </>
+  )
+
+
+
+}
+
+
+function WhiteLabelSolutionComponent(){
+
+  return(
+<>
+
+<Navbar/>
+<WhiteLabelBanner/>
+<WhiteLabelContent/>
+<BusinessCreateAccount/>
+<Footer/>
+
+
+
+
+</>
+
+
+  )
+
+
+}
+
+
+
+function Payment(){
+  document.title="PaymentGateway | Kuberpays"
+  return(
+<>
+<Navbar/>
+<PaymentGatewayHero/>
+<PaymentGatewayInfo/>
+<Footer/>
+ </>
+  )
+}
+
 
 
 function App() {
@@ -80,11 +163,13 @@ function App() {
      
         <Routes>
           <Route path="/" element={<Home />} />
-// <<<<<<< development
-//              <Route path="/developers" element={<DevelopersComponent />} />
-// =======
-//           <Route path="/payment-gateway" element={<Payment />} />
-// >>>>>>> Main
+            <Route path="/developers" element={<DevelopersComponent />} />
+
+        <Route path="/payment-gateway" element={<Payment />} />
+        <Route path="/about" element={<AboutUsComponent/>}/>
+        <Route path="/invoices" element={<InvoiceComponent/>}/>
+        <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
+        <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
        </Routes>
       </BrowserRouter>
     </div>
