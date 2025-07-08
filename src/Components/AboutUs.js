@@ -1,9 +1,9 @@
 import React from 'react';
-
+import "../External CSS/AboutUs.css";
 const AboutUs = () => {
     return (
         <section className="about-me">
-            <div id='about-us' className="about-container">
+            <div id='about-us'>
                 <div className="about-text">
                     <h4 id='heading-of-about'>Understanding Our Clients</h4>
                     <p className='distance'>
@@ -15,7 +15,7 @@ const AboutUs = () => {
 
                     <p className='distance'>
                         Our business revolves around long-term, trusted, and mutually beneficial relationships.
-                        At KivaPays, we hire the best to deliver the best – a team of passionate specialists within a digital world.
+                        At KPays, we hire the best to deliver the best – a team of passionate specialists within a digital world.
                         We believe that true intelligence finds its form in simplicity, which is why we work with our clients in mapping out secure,
                         effective, and tailored payment solutions that optimize their business growth.
                     </p>

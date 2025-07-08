@@ -94,7 +94,16 @@ function InvoiceComponent(){
 }
 
 
-
+function ContactUs(){
+  document.title="ContactUs | Kuberpays"
+  return(
+    <>
+   <Navbar/>
+   <ContactSection/>
+   <Footer/>
+    </>
+  )
+}
 function Payment(){
   document.title="PaymentGateway | Kuberpays"
   return(
@@ -121,6 +130,7 @@ function App() {
         <Route path="/payment-gateway" element={<Payment />} />
         <Route path="/about" element={<AboutUsComponent/>}/>
         <Route path="/invoices" element={<InvoiceComponent/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
        </Routes>
       </BrowserRouter>
     </div>

@@ -18,18 +18,14 @@
 .footer-left {
   flex: 1;
   min-width: 280px;
+   /* border: 2px solid red; */
 }
 .logo-footer{
 
-height: 90px;
-width: 110px;
+height: 70px;
+width: 140px;
 /* height:"100px",width:"120px" */
 /* border: 2px solid red; */
-
-
-
-
-
 }
 
 .footer-left .logo {
@@ -43,6 +39,7 @@ width: 110px;
   margin: 0.3rem 0;
   line-height: 1.6;
   font-size: 0.95rem;
+   /* border: 2px solid red; */
 }
 
 .footer-left .icon {

@@ -19,7 +19,7 @@ const Footer = () => {
 
         <div className="footer-right">
           <p className="copyright">
-            Copyright © 2022 Kuberpays. All rights reserved.
+            Copyright © 2025 Kuberpays. All rights reserved.
           </p>
         </div>
       </div>
