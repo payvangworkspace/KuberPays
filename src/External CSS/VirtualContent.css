@@ -1,0 +1,101 @@
+/* General Styles */
+.virtual-account-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+    box-shadow: none; /* Removed shadow to eliminate border-like effect */
+    /* border: 2px solid orange; */
+}
+
+/* Title Styling */
+.virtual-account-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Content Styling */
+.virtual-account-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    padding: 10px 20px;
+    /* border: 2px solid hotpink; */
+}
+
+/* Bold Strong Tag */
+.virtual-account-content strong {
+    color: #007bff; 
+}
+
+/* Benefits List */
+.virtual-account-benefits {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.virtual-account-benefits li {
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #444;
+    /* border: 2px solid orchid; */
+}
+
+/* Image Container */
+.virtual-account-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    /* border: 2px solid khaki; */
+}
+
+/* Image Styling */
+.virtual-account-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: none; /* Removed shadow to avoid border effect */
+    /* transition: transform 0.3s ease-in-out; */
+    /* border: 2px solid red; */
+}
+
+/* .virtual-account-image img:hover {
+    transform: scale(1.05);
+} */
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .virtual-account-title {
+      font-size: 28px;
+    }
+
+    .virtual-account-content {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    .virtual-account-benefits li {
+      font-size: 14px;
+    }
+    .virtual-account-benefits li {
+        background-size: 20px;
+        padding-left: 0px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #444;
+        /* border: 2px solid orchid; */
+    }
+    
+
+
+
+
+}

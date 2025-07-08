@@ -28,6 +28,11 @@ import AboutUs from './Components/AboutUs';
 import { InvoiceBanner } from './Components/InvoiceBanner';
 import InvoicingContent from './Components/InvoiceContent';
 // >>>>>>> Main
+import BusinessCreateAccount from './Components/BusinessCreateAccount';
+import { VirtualBanner } from './Components/VirtualBanner';
+import VirtualContent from './Components/VirtualContent';
+import { WhiteLabelBanner } from './Components/WhiteLabelBanner';
+import WhiteLabelContent from './Components/WhiteLabelContent';
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -84,6 +89,7 @@ function InvoiceComponent(){
     <Navbar/>
     <InvoiceBanner/>
     <InvoicingContent/>
+    <BusinessCreateAccount/>
     
     <Footer/>
     
@@ -91,6 +97,47 @@ function InvoiceComponent(){
     
     </>
   )
+}
+
+
+function VirtualAccountComponent(){
+
+  return(
+    <>
+    <Navbar/>
+<VirtualBanner/>    
+    <VirtualContent/>
+    <BusinessCreateAccount/>
+    <Footer/>
+    
+    </>
+  )
+
+
+
+}
+
+
+function WhiteLabelSolutionComponent(){
+
+  return(
+<>
+
+<Navbar/>
+<WhiteLabelBanner/>
+<WhiteLabelContent/>
+<BusinessCreateAccount/>
+<Footer/>
+
+
+
+
+</>
+
+
+  )
+
+
 }
 
 
@@ -121,6 +168,8 @@ function App() {
         <Route path="/payment-gateway" element={<Payment />} />
         <Route path="/about" element={<AboutUsComponent/>}/>
         <Route path="/invoices" element={<InvoiceComponent/>}/>
+        <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
+        <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
        </Routes>
       </BrowserRouter>
     </div>
