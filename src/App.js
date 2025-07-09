@@ -1,12 +1,9 @@
 
 import './App.css';
-import Contact from './Components/Contact';
 import ContactSection from './Components/ContactSection';
-import Features from './Components/Features';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
-
 import { BrowserRouter } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
@@ -14,10 +11,6 @@ import InnovationSection from './Components/InnovationSection';
 import EnterpriseSuite from './Components/EnterpriseSuite';
 import IndustriesSection from './Components/IndustriesSection';
 import AnimatedStats from './Components/AnimatedStats';
-
-import DevelopersSection from './Components/DevelopersSection';
-
-
 import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
 import PaymentGatewayHero from './Components/PaymentGatewayHero';
 import IntegrationSection from './Components/IntegrationSection';
@@ -25,18 +18,17 @@ import AboutUsBanner from './Components/AboutUsBanner';
 import AboutUs from './Components/AboutUs';
 import { InvoiceBanner } from './Components/InvoiceBanner';
 import InvoicingContent from './Components/InvoiceContent';
-
 import BusinessCreateAccount from './Components/BusinessCreateAccount';
 import { VirtualBanner } from './Components/VirtualBanner';
 import VirtualContent from './Components/VirtualContent';
 import { WhiteLabelBanner } from './Components/WhiteLabelBanner';
 import WhiteLabelContent from './Components/WhiteLabelContent';
-// <<<<<<< Nitesh
-// import CommonBanner from './Components/CommonBanner';
-// import CardSlider from './Components/CardSlider';
-// =======
-// import Pricing from './Components/Pricing';
-// >>>>>>> feature
+import CommonBanner from './Components/CommonBanner';
+import CardSlider from './Components/CardSlider';
+import Pricing from './Components/Pricing';
+import TermsAndConditions from './Components/TermsAndConditions';
+import PrivacyPolicy from './Components/PrivacyPolicy';
+
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -48,13 +40,9 @@ function Home(){
 <InnovationSection/>
 <EnterpriseSuite/>
 <IndustriesSection/>
-{/* <RequestCallback/> */}
-{/* <ClientUnderstanding/> */}
 <AnimatedStats/>
 <Footer/>
 </>
-
-
   )
 }
 
@@ -63,7 +51,6 @@ function DevelopersComponent(){
   return (
 <>
 <Navbar/>
-{/* <DevelopersSection/> */}
 <IntegrationSection/>
 <Footer/>
 </>
@@ -74,8 +61,35 @@ function Pricingcomponent(){
   return(
     <>
   <Navbar/>
+  <CommonBanner title="Pricing"imageUrl="./Pricing.jpg"/>
   <Pricing/>
+  <BusinessCreateAccount/>
+  <Footer/>
   </>
+  )
+}
+
+function TandC(){
+  return(
+    <>
+   <Navbar/>
+   <CommonBanner title="Terms & Conditions"imageUrl="./terms.jpg"/>
+   <TermsAndConditions/>
+   <BusinessCreateAccount/>
+   <Footer/>
+    </>
+  )
+}
+
+function Privacy(){
+  return(
+    <>
+    <Navbar/>
+    <CommonBanner title="privacy policy"imageUrl="./privacy.jpg"/>
+    <PrivacyPolicy/>
+    <BusinessCreateAccount/>
+    <Footer/>
+    </>
   )
 }
 
@@ -88,11 +102,7 @@ function AboutUsComponent(){
 <AboutUs/>
 <BusinessCreateAccount/>
 <Footer/>
-
-
 </>
-
-
   )
 }
 
@@ -102,16 +112,11 @@ function InvoiceComponent(){
     <Navbar/>
     <InvoiceBanner/>
     <InvoicingContent/>
-    <BusinessCreateAccount/>
-    
+    <BusinessCreateAccount/> 
     <Footer/>
-    
-    
-    
     </>
   )
 }
-
 
 
 function ContactUs(){
@@ -127,21 +132,17 @@ function ContactUs(){
 }
 
 function VirtualAccountComponent(){
-
   return(
     <>
     <Navbar/>
-<VirtualBanner/>    
+    <VirtualBanner/>    
     <VirtualContent/>
     <BusinessCreateAccount/>
     <Footer/>
-    
     </>
   )
-
-
-
 }
+
 
 function FeatureComponent(){
   return (
@@ -149,21 +150,16 @@ function FeatureComponent(){
 <Navbar/>
 <CommonBanner title="Features" imageUrl="./common1.jpg"  />
 <CardSlider/>
-
+<BusinessCreateAccount/>
+<Footer/>
 </>
-
   )
 }
 
 
-
-
-
 function WhiteLabelSolutionComponent(){
-
   return(
 <>
-
 <Navbar/>
 <WhiteLabelBanner/>
 <WhiteLabelContent/>
@@ -171,10 +167,7 @@ function WhiteLabelSolutionComponent(){
 <Footer/>
 </>
   )
-
-
 }
-
 
 
 function Payment(){
@@ -193,47 +186,40 @@ function Payment(){
 function FAQsComponent(){
   return(
 <>
-
 <Navbar/>
 <CommonBanner title="FAQS"  imageUrl="./features.jpg"/>
-
-
-
+<BusinessCreateAccount/>
+<Footer/>
 </>
-
-
   )
 }
-
 
 
 function App() {
   return (
  <div>
-  <BrowserRouter>
-     
+  <BrowserRouter>     
         <Routes>
           <Route path="/" element={<Home />} />
             <Route path="/developers" element={<DevelopersComponent />} />
-
         <Route path="/payment-gateway" element={<Payment />} />
         <Route path="/about" element={<AboutUsComponent/>}/>
         <Route path="/invoices" element={<InvoiceComponent/>}/>
-// <<<<<<< Nitesh
-//         <Route path="/contact" element={<ContactUs/>}/>
-//         <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
-//         <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
-//                 <Route path="/features" element={<FeatureComponent/>}/>
-//                                 <Route path="/faqs" element={<FAQsComponent/>}/>
-// =======
 
-//         <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
+         <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
+         <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
+                 <Route path="/features" element={<FeatureComponent/>}/>
+                                 <Route path="/faqs" element={<FAQsComponent/>}/> =====
 
-//         <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
-//         <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
-//         <Route path="/pricing" element={<Pricingcomponent/>}/>
+         <Route path="/contact" element={<ContactUs/>}/>
 
-// >>>>>>> feature
+        <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>        <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
+         <Route path="/pricing" element={<Pricingcomponent/>}/>
+         <Route path="/terms" element={<TandC/>}/>
+          <Route path="/privacy-policy" element={<Privacy/>}/>
+
+
        </Routes>
       </BrowserRouter>
     </div>

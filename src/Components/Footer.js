@@ -10,11 +10,11 @@ const Footer = () => {
           <img className="logo logo-footer" src='../logo2.png'/>
           {/* <p>Swift Code: <strong>KUBERPAYMENT</strong></p> */}
           <p>
-            <FaMapMarkerAlt className="icon" /> Suite 4, Europe House, Packhorse Road,<br />
-            Gerrard Cross, Buckinghamshire, SL9 8BQ, United Kingdom
+            <FaMapMarkerAlt className="icon" /> Kuber Pays, 113 Lakeshore Rd, West, Suite-163,<br />
+             Mississauga ON L5H 1E9  Bifro House, Canada
           </p>
-          <p className='phone-contact' onClick={() => (window.location.href = "tel:+447700098523")}><FaPhoneAlt className="icon"  /> +44 7700 098523</p>
-          <p className='phone-contact' onClick={() => (window.location.href = "mailto:support@kuberpayment.com")}><FaEnvelope className="icon" /> support@kuberpayment.com</p>
+          <p className='phone-contact' onClick={() => (window.location.href = "tel:+1-647-619-0777")}><FaPhoneAlt className="icon"  /> +1-647-619-0777</p>
+          <p className='phone-contact' onClick={() => (window.location.href = "mailto:info@kuberpayment.com")}><FaEnvelope className="icon" /> info@kuberpayment.com</p>
         </div>
 
         <div className="footer-right">
