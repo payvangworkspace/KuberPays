@@ -31,8 +31,12 @@ import { VirtualBanner } from './Components/VirtualBanner';
 import VirtualContent from './Components/VirtualContent';
 import { WhiteLabelBanner } from './Components/WhiteLabelBanner';
 import WhiteLabelContent from './Components/WhiteLabelContent';
-import CommonBanner from './Components/CommonBanner';
-import CardSlider from './Components/CardSlider';
+// <<<<<<< Nitesh
+// import CommonBanner from './Components/CommonBanner';
+// import CardSlider from './Components/CardSlider';
+// =======
+// import Pricing from './Components/Pricing';
+// >>>>>>> feature
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -66,6 +70,15 @@ function DevelopersComponent(){
   )
 }
 
+function Pricingcomponent(){
+  return(
+    <>
+  <Navbar/>
+  <Pricing/>
+  </>
+  )
+}
+
 
 function AboutUsComponent(){
   return (
@@ -73,6 +86,7 @@ function AboutUsComponent(){
 <Navbar/>
 <AboutUsBanner/>
 <AboutUs/>
+<BusinessCreateAccount/>
 <Footer/>
 
 
@@ -85,7 +99,6 @@ function AboutUsComponent(){
 function InvoiceComponent(){
   return (
     <>
-  
     <Navbar/>
     <InvoiceBanner/>
     <InvoicingContent/>
@@ -107,6 +120,7 @@ function ContactUs(){
     <>
    <Navbar/>
    <ContactSection/>
+   <BusinessCreateAccount/>
    <Footer/>
     </>
   )
@@ -205,11 +219,21 @@ function App() {
         <Route path="/payment-gateway" element={<Payment />} />
         <Route path="/about" element={<AboutUsComponent/>}/>
         <Route path="/invoices" element={<InvoiceComponent/>}/>
-        <Route path="/contact" element={<ContactUs/>}/>
-        <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
-        <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
-                <Route path="/features" element={<FeatureComponent/>}/>
-                                <Route path="/faqs" element={<FAQsComponent/>}/>
+// <<<<<<< Nitesh
+//         <Route path="/contact" element={<ContactUs/>}/>
+//         <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
+//         <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
+//                 <Route path="/features" element={<FeatureComponent/>}/>
+//                                 <Route path="/faqs" element={<FAQsComponent/>}/>
+// =======
+
+//         <Route path="/contact" element={<ContactUs/>}/>
+
+//         <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
+//         <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
+//         <Route path="/pricing" element={<Pricingcomponent/>}/>
+
+// >>>>>>> feature
        </Routes>
       </BrowserRouter>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../External CSS/Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
           <p>
             A modern, secure, and seamless payment experience tailored for businesses of all sizes. Accept, manage, and grow — all in one place.
           </p>
-          <a href="#features" className="cta-button">Get Started</a>
+          <Link to="/contact" className="cta-button">Get Started</Link>
         </div>
 
         <div className="hero-image">
