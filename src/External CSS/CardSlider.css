@@ -1,0 +1,192 @@
+/* -------------------- CONTAINER -------------------- */
+.card-slider-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f4f6ff, #e8f0fe);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    /* border: 2px solid orange; */
+    cursor: pointer;
+   
+}
+
+/* -------------------- HEADER -------------------- */
+.card-slider-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    background: linear-gradient(45deg, #1e3a8a, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-slider-subtitle {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+}
+
+/* -------------------- CARD SLIDER -------------------- */
+.card-slider-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 3rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.card-slider-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* -------------------- CARDS -------------------- */
+.card {
+    min-width: 320px;
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2.5rem 1rem; /* Added better spacing */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background transition effect */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    /* background: linear-gradient(90deg, #c67825, #f08f08); Greenish gradient */
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.card:hover::before {
+    left: 0;
+}
+
+.card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* -------------------- ICON -------------------- */
+.card-icon {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0px 4px 12px rgba(0, 128, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.1);
+}
+
+/* -------------------- TEXT -------------------- */
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-top: 4rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-top: 0.7rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    transition: color 0.3s ease-in-out;
+}
+
+.card:hover .card-title,
+.card:hover .card-description {
+    color: white;
+}
+
+/* -------------------- NAVIGATION BUTTONS -------------------- */
+.nav-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 2px solid pink; */
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    color: #007bff;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 128, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    background: rgba(0, 128, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+    .card-slider-title {
+        font-size: 2.2rem;
+    }
+
+    .card-slider-subtitle {
+        font-size: 1rem;
+    }
+
+    .card {
+        min-width: 280px;
+        max-width: 280px;
+    }
+}
+.card-slider-subtitle {
+    font-size: 1.2rem;
+    color: #374151;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    padding: 0 2rem;
+    line-height: 1.6;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+}
