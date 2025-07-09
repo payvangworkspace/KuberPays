@@ -6,7 +6,7 @@ import Features from './Components/Features';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
-// import Pricing from './Components/Pricing';
+
 import { BrowserRouter } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
@@ -14,12 +14,10 @@ import InnovationSection from './Components/InnovationSection';
 import EnterpriseSuite from './Components/EnterpriseSuite';
 import IndustriesSection from './Components/IndustriesSection';
 import AnimatedStats from './Components/AnimatedStats';
-// <<<<<<< development
-// import RequestCallback from './Components/RequestCallback';
-// import ClientUnderstanding from './Components/ClientUnderstanding';
+
 import DevelopersSection from './Components/DevelopersSection';
-// =======
-// import PaymentGateway from './Components/PaymentGatewayInfo';
+
+
 import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
 import PaymentGatewayHero from './Components/PaymentGatewayHero';
 import IntegrationSection from './Components/IntegrationSection';
@@ -27,13 +25,18 @@ import AboutUsBanner from './Components/AboutUsBanner';
 import AboutUs from './Components/AboutUs';
 import { InvoiceBanner } from './Components/InvoiceBanner';
 import InvoicingContent from './Components/InvoiceContent';
-// >>>>>>> Main
+
 import BusinessCreateAccount from './Components/BusinessCreateAccount';
 import { VirtualBanner } from './Components/VirtualBanner';
 import VirtualContent from './Components/VirtualContent';
 import { WhiteLabelBanner } from './Components/WhiteLabelBanner';
 import WhiteLabelContent from './Components/WhiteLabelContent';
-import Pricing from './Components/Pricing';
+// <<<<<<< Nitesh
+// import CommonBanner from './Components/CommonBanner';
+// import CardSlider from './Components/CardSlider';
+// =======
+// import Pricing from './Components/Pricing';
+// >>>>>>> feature
 
 function Home(){
   document.title="Home | Kuberpays"
@@ -140,6 +143,21 @@ function VirtualAccountComponent(){
 
 }
 
+function FeatureComponent(){
+  return (
+<>
+<Navbar/>
+<CommonBanner title="Features" imageUrl="./common1.jpg"  />
+<CardSlider/>
+
+</>
+
+  )
+}
+
+
+
+
 
 function WhiteLabelSolutionComponent(){
 
@@ -151,13 +169,7 @@ function WhiteLabelSolutionComponent(){
 <WhiteLabelContent/>
 <BusinessCreateAccount/>
 <Footer/>
-
-
-
-
 </>
-
-
   )
 
 
@@ -178,6 +190,22 @@ function Payment(){
 }
 
 
+function FAQsComponent(){
+  return(
+<>
+
+<Navbar/>
+<CommonBanner title="FAQS"  imageUrl="./features.jpg"/>
+
+
+
+</>
+
+
+  )
+}
+
+
 
 function App() {
   return (
@@ -191,13 +219,21 @@ function App() {
         <Route path="/payment-gateway" element={<Payment />} />
         <Route path="/about" element={<AboutUsComponent/>}/>
         <Route path="/invoices" element={<InvoiceComponent/>}/>
+// <<<<<<< Nitesh
+//         <Route path="/contact" element={<ContactUs/>}/>
+//         <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
+//         <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
+//                 <Route path="/features" element={<FeatureComponent/>}/>
+//                                 <Route path="/faqs" element={<FAQsComponent/>}/>
+// =======
 
-        <Route path="/contact" element={<ContactUs/>}/>
+//         <Route path="/contact" element={<ContactUs/>}/>
 
-        <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
-        <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
-        <Route path="/pricing" element={<Pricingcomponent/>}/>
+//         <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
+//         <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
+//         <Route path="/pricing" element={<Pricingcomponent/>}/>
 
+// >>>>>>> feature
        </Routes>
       </BrowserRouter>
     </div>
