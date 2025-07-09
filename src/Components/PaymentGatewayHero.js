@@ -1,5 +1,6 @@
 import React from "react";
 import "../External CSS/PaymentGatewayHero.css";
+import { Link } from "react-router-dom";
 
 const PaymentGatewayHero = () => {
   return (
@@ -10,7 +11,7 @@ const PaymentGatewayHero = () => {
           Accept online payments with speed, flexibility, and security — globally or locally.
         </p>
         <div className="hero-btn-parent-kb">
-          <button className="hero-btn-kb">Get Started</button>
+          <Link to="/contact"className="hero-btn-kb"style={{textDecoration:"none"}}>Get Started</Link>
         </div>
       </div>
     </div>
