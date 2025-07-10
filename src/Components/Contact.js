@@ -25,8 +25,8 @@ const Contact = () => {
           <h2>Let’s Connect</h2>
           <p>We’re here to help. Reach out with any questions about KuberPays.</p>
           <div className="contact-details">
-            <p><strong>📞</strong> +91 98765 43210</p>
-            <p><strong>✉️</strong> support@kuberpays.com</p>
+            <p><strong>📞</strong> +1-647-619-0777</p>
+            <p><strong>✉️</strong> info@kuberpays.com</p>
             <p><strong>📍</strong> New Delhi, India</p>
           </div>
         </div>

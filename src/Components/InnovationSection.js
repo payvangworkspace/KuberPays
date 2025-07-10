@@ -44,7 +44,7 @@ const InnovationSection = () => {
           <h2>"Smarter Payments, Trusted by Thousands"</h2>
         </div>
         <p className="description">
-          At KivaPays, we empower your business with secure, fast, and seamless
+          At KuberPays, we empower your business with secure, fast, and seamless
           payment solutions. Whether you're scaling up or just starting out,
           our platform is designed to support your growth with robust APIs,
           insightful analytics, and unmatched reliability.

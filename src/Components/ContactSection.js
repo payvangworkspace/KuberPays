@@ -6,20 +6,19 @@ const contactDetails = [
   {
     icon: <FaEnvelope />,
     title: "Email Us",
-    info: "support@kuberpayment.com",
+    info: "info@kuberpayment.com",
     subtitle: "Support 24/7",
   },
   {
     icon: <FaPhoneAlt />,
     title: "Call Us",
-    info: "(+256) 777 007880",
+    info: "+1-647-619-0777",
     subtitle: "Free Consultation",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Visit Us",
-    info: "Plot 16, Office No. BB-02, 17 Nyonyi Gardens Rd, Kampala, Uganda",
-    subtitle: "Kampala, Uganda",
+    info: "Kuber Pays, 113 Lakeshore Rd, West, Suite-163, Mississauga ON L5H 1E9  Bifro House, Canada",
   },
 ];
 
