@@ -69,7 +69,7 @@ const ContactForm = () => {
         {/* Left Illustration */}
         <div className="illustration">
           <img
-            src="/contact-comment.png"
+            src={`${process.env.PUBLIC_URL}/contact-comment.png`}
             alt="Illustration"
             className="illustration-img"
           />
