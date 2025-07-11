@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../External CSS/InnovationSection.css';
@@ -83,10 +83,10 @@ const InnovationSection = () => {
 
       {/* Footer Text */}
       <p className="footer-text" data-aos="fade-up" data-aos-delay="600">
-        Join thousands of businesses using KivaPays to simplify payments.{' '}
-        <a href="/about-us" className="explore-link">
+        Join thousands of businesses using KuberPays to simplify payments.{' '}
+        <Link to="/about" className="explore-link">
           Learn more about us
-        </a>
+        </Link>
       </p>
     </section>
   );

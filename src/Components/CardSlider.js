@@ -15,7 +15,7 @@ const features = [
     icon: <CreditCard size={32} />,
     title: "Accept All Payment Modes",
     description:
-      "With Domestic and International Credit & Debit cards, EMIs (Credit/Debit Cards & Cardless), Netbanking from 58 banks, KivaPays provides the most extensive set of payment methods.",
+      "With Domestic and International Credit & Debit cards, EMIs (Credit/Debit Cards & Cardless), Netbanking from 58 banks, KuberPays provides the most extensive set of payment methods.",
   },
   {
     icon: <BarChart3 size={32} />,

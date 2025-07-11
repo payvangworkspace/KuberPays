@@ -31,7 +31,7 @@ const EnterpriseSuite = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <img src="/enterprise.png" alt="Enterprise" />
+          <img src={`${process.env.PUBLIC_URL}/enterprise.png`} alt="Enterprise" />
         </motion.div>
 
         {/* Content Side */}
@@ -44,7 +44,7 @@ const EnterpriseSuite = () => {
         >
           <h2>Built for Global Enterprises</h2>
           <p>
-            Scale your business confidently with KivaPays' secure, intelligent, and
+            Scale your business confidently with KuberPays' secure, intelligent, and
             integrated financial tools for modern enterprises.
           </p>
           <ul>

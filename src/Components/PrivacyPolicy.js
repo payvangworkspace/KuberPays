@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
       <div className="privacy-card">
         <h1 className="privacy-title">Privacy Policy</h1>
 
-        <p><strong>KivaPays Uganda</strong> ensures that your privacy is protected and secured. We use your personal data only as outlined in this policy.</p>
+        <p><strong>KuberPays Uganda</strong> ensures that your privacy is protected and secured. We use your personal data only as outlined in this policy.</p>
 
         <div className="privacy-section">
           <h2>Information We Collect</h2>

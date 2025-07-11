@@ -7,8 +7,8 @@ const faqData = [
   { question: 'What documents are required for onboarding?',
     answer: (
       <>
-      <p>As part of the customer onboarding process, the following documents will have to be submitted.</p>
-      <ul>
+      <p style={{padding:"0px"}}>As part of the customer onboarding process, the following documents will have to be submitted.</p>
+      <ul style={{padding:"15px"}}>
         <li>Certificate of Incorporation</li>
         <li>Memorandum & Articles of Association</li>
         <li>Registered Office Address Proof such as Utility Bill or Bank Statement</li>
@@ -25,7 +25,7 @@ const faqData = [
   { question: 'How does the integration happen?', answer: 'We will provide documentation and API details to your IT team and we will assist you until you are fully operational.' },
   { question: 'Are any businesses and product restricted?',
     answer: (
-      <ul>
+      <ul style={{padding:"15px"}}>
         <li>Pharmaceuticals or illegal drugs</li>
         <li>Explicit content</li>
         <li>Unauthorized Forex trading</li>
@@ -53,7 +53,7 @@ const FAQsSection = () => {
                   <h3>{item.question}</h3>
                   <span className="faq-icon">{activeIndex === index ? <FaEyeSlash /> : <FaEye />}</span>
                 </div>
-                <div className={`faq-answer ${activeIndex === index ? 'open' : ''}`}>{item.answer}</div>
+                <div className={`faq-answer ${activeIndex === index ? 'open' : ''}`} >{item.answer}</div>
               </div>
             ))}
           </div>

@@ -36,7 +36,7 @@ const TermsAndConditions = () => {
         </p>
 
         <p>
-          You may not link to this website from another site or document without prior written consent from <strong>KivaPays</strong>.
+          You may not link to this website from another site or document without prior written consent from <strong>KuberPays</strong>.
         </p>
 
         <p>

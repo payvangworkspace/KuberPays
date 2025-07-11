@@ -1,0 +1,169 @@
+/* General Styles */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: whitesmoke;
+  padding: 20px;
+}
+
+#contact-card {
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  overflow: hidden;
+  width: 95%;
+}
+
+.illustration {
+  flex: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  padding: 20px;
+}
+
+.illustration-img {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .illustration {
+    display: flex;
+  }
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+  text-align: left;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+  width: 100%;
+}
+
+.input-field:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.textarea {
+  height: 120px;
+  resize: none;
+}
+
+.submit-button {
+  background: linear-gradient(to right, #34d399, #10b981);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 15px;
+  }
+  
+  #contact-card {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .form-section {
+    padding: 30px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  .contact-container {
+    justify-content: flex-start;
+    align-items: start;
+    width: 100%;
+    padding: 15px;
+  }
+
+  #contact-card {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .submit-button {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+}
