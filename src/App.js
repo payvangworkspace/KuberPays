@@ -85,7 +85,7 @@ function PricingComponent() {
   return (
     <>
       <Navbar />
-      <CommonBanner title="Pricing" imageUrl="./Pricing.jpg" />
+      <CommonBanner title="Pricing" imageUrl="./pricing.jpg" />
       <Pricing />
       <BusinessCreateAccount />
       <Footer />
