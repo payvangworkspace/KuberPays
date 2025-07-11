@@ -1,41 +1,54 @@
 import React from "react";
+import { FaLock, FaBolt, FaGlobe, FaChartBar } from "react-icons/fa";
 import "../External CSS/PaymentGateway.css";
 
 const PaymentGatewayInfo = () => {
   return (
-    <div className="payment-info-section">
+    <section className="payment-info-section">
       <div className="payment-info-wrapper">
-        {/* LEFT: Content */}
+        {/* LEFT: Text Content */}
         <div className="payment-info-content">
-          <h1 className="payment-info-title">Payment Gateway</h1>
+          <h1 className="payment-info-title">Secure & Scalable Payment Gateway</h1>
           <p className="payment-info-description">
-            Our integrated payment gateway ensures a smooth and secure transaction experience for both businesses and customers. Accept payments through various channels including Credit/Debit Cards, UPI, Net Banking, and Wallets.
+            Seamlessly accept payments via Cards, UPI, Net Banking, and Wallets with industry-grade security and real-time processing. Empower your business with flexible, fast, and reliable payment infrastructure.
           </p>
 
           <div className="payment-info-list">
             <div className="payment-info-item">
-              <h3>🔒 Secure & Encrypted</h3>
-              <p>All transactions are protected with end-to-end encryption and comply with global security standards like PCI-DSS.</p>
+              <div className="icon"><FaLock /></div>
+              <div>
+                <h3>Secure & Encrypted</h3>
+                <p>End-to-end encryption with PCI-DSS compliance to ensure data protection.</p>
+              </div>
             </div>
 
             <div className="payment-info-item">
-              <h3>⚡ Real-Time Processing</h3>
-              <p>Experience instant payment authorization, fast settlements, and real-time updates.</p>
+              <div className="icon"><FaBolt /></div>
+              <div>
+                <h3>Real-Time Processing</h3>
+                <p>Instant authorizations, faster settlements, and live transaction tracking.</p>
+              </div>
             </div>
 
             <div className="payment-info-item">
-              <h3>🌍 Multiple Payment Methods</h3>
-              <p>Support for all major cards, UPI, net banking, wallets, and even QR code scanning.</p>
+              <div className="icon"><FaGlobe /></div>
+              <div>
+                <h3>Multiple Payment Methods</h3>
+                <p>Support for Cards, UPI, Netbanking, Wallets, and QR-based payments.</p>
+              </div>
             </div>
 
             <div className="payment-info-item">
-              <h3>📊 Dashboard & Insights</h3>
-              <p>Track transactions, view reports, and manage refunds via your merchant dashboard.</p>
+              <div className="icon"><FaChartBar /></div>
+              <div>
+                <h3>Dashboard & Insights</h3>
+                <p>Comprehensive reporting tools and refund management in a unified dashboard.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* RIGHT: Image */}
+        {/* RIGHT: Illustration */}
         <div className="payment-info-image">
           <img
             src={`${process.env.PUBLIC_URL}/payment-gateway.jpg`}
@@ -43,7 +56,7 @@ const PaymentGatewayInfo = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
