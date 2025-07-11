@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import ScrollToTop from "./Components/ScrollToTop";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
@@ -26,13 +26,11 @@ import CardSlider from "./Components/CardSlider";
 import Pricing from "./Components/Pricing";
 import TermsAndConditions from "./Components/TermsAndConditions";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
-
 import FAQsSection from "./Components/FAQsSection";
 import ContactForm from "./Components/ContactForm";
 import SignUp from "./Components/SignUp";
 
-// ========== Individual Route Components ==========
-
+// Individual Route Components
 function Home() {
   document.title = "Home | Kuberpays";
   return (
@@ -49,27 +47,20 @@ function Home() {
   );
 }
 
-
-
-function SignupComponent(){
-      document.title = "Signup | Kuberpays";
-    return (
-<>
-<Navbar/>
-<SignUp/>
-<BusinessCreateAccount/>
-<Footer/>
-
-
-
-</>
-
-
-    )
+function SignupComponent() {
+  document.title = "Signup | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <SignUp />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
 }
 
 function DevelopersComponent() {
-      document.title = "Devoper Integration | Kuberpays";
+  document.title = "Devoper Integration | Kuberpays";
   return (
     <>
       <Navbar />
@@ -81,7 +72,7 @@ function DevelopersComponent() {
 }
 
 function PricingComponent() {
-      document.title = "Pricing | Kuberpays";
+  document.title = "Pricing | Kuberpays";
   return (
     <>
       <Navbar />
@@ -94,7 +85,7 @@ function PricingComponent() {
 }
 
 function TandC() {
-      document.title = "Terms & Conditions | Kuberpays";
+  document.title = "Terms & Conditions | Kuberpays";
   return (
     <>
       <Navbar />
@@ -107,7 +98,7 @@ function TandC() {
 }
 
 function Privacy() {
-      document.title = "Privacy Policy | Kuberpays";
+  document.title = "Privacy Policy | Kuberpays";
   return (
     <>
       <Navbar />
@@ -120,7 +111,7 @@ function Privacy() {
 }
 
 function AboutUsComponent() {
-      document.title = "About Us | Kuberpays";
+  document.title = "About Us | Kuberpays";
   return (
     <>
       <Navbar />
@@ -133,7 +124,7 @@ function AboutUsComponent() {
 }
 
 function InvoiceComponent() {
-      document.title = "Invoice | Kuberpays";
+  document.title = "Invoice | Kuberpays";
   return (
     <>
       <Navbar />
@@ -146,14 +137,13 @@ function InvoiceComponent() {
 }
 
 function ContactUs() {
-
   document.title = "Contact Us | Kuberpays";
   return (
     <>
       <Navbar />
       <CommonBanner title="Contact Us" imageUrl="./contact-us-bg.jpg" />
       <ContactSection />
-      <ContactForm/>
+      <ContactForm />
       <BusinessCreateAccount />
       <Footer />
     </>
@@ -161,7 +151,7 @@ function ContactUs() {
 }
 
 function VirtualAccountComponent() {
-      document.title = "Virtual Account | Kuberpays";
+  document.title = "Virtual Account | Kuberpays";
   return (
     <>
       <Navbar />
@@ -174,7 +164,7 @@ function VirtualAccountComponent() {
 }
 
 function FeatureComponent() {
-      document.title = "Features | Kuberpays";
+  document.title = "Features | Kuberpays";
   return (
     <>
       <Navbar />
@@ -187,7 +177,7 @@ function FeatureComponent() {
 }
 
 function WhiteLabelSolutionComponent() {
-      document.title = "White Label | Kuberpays";
+  document.title = "White Label | Kuberpays";
   return (
     <>
       <Navbar />
@@ -200,7 +190,6 @@ function WhiteLabelSolutionComponent() {
 }
 
 function Payment() {
-     
   document.title = "Payment Gateway | Kuberpays";
   return (
     <>
@@ -213,7 +202,7 @@ function Payment() {
 }
 
 function FAQsComponent() {
-      document.title = "FAQs | Kuberpays";
+  document.title = "FAQs | Kuberpays";
   return (
     <>
       <Navbar />
@@ -225,32 +214,30 @@ function FAQsComponent() {
   );
 }
 
-// ========== App Component ==========
-
+// App Component
 function App() {
+  const basename = process.env.NODE_ENV === "production" ? "/KuberPays" : "/";
+
   return (
-    <div>
-      <BrowserRouter basename="KuberPays">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/developers" element={<DevelopersComponent />} />
-          <Route path="/payment-gateway" element={<Payment />} />
-          <Route path="/about" element={<AboutUsComponent />} />
-          <Route path="/invoices" element={<InvoiceComponent />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/virtual-account" element={<VirtualAccountComponent />} />
-          <Route path="/white-label" element={<WhiteLabelSolutionComponent />} />
-          <Route path="/features" element={<FeatureComponent />} />
-          <Route path="/faqs" element={<FAQsComponent />} />
-          <Route path="/pricing" element={<PricingComponent />} />
-          <Route path="/terms" element={<TandC />} />
-          <Route path="/privacy-policy" element={<Privacy />} />
-
-          <Route path="/signup" element={<SignupComponent />} />
-
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter basename={basename}>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/developers" element={<DevelopersComponent />} />
+        <Route path="/payment-gateway" element={<Payment />} />
+        <Route path="/about" element={<AboutUsComponent />} />
+        <Route path="/invoices" element={<InvoiceComponent />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/virtual-account" element={<VirtualAccountComponent />} />
+        <Route path="/white-label" element={<WhiteLabelSolutionComponent />} />
+        <Route path="/features" element={<FeatureComponent />} />
+        <Route path="/faqs" element={<FAQsComponent />} />
+        <Route path="/pricing" element={<PricingComponent />} />
+        <Route path="/terms" element={<TandC />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
+        <Route path="/signup" element={<SignupComponent />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
