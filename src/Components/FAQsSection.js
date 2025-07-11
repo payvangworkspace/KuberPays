@@ -59,7 +59,7 @@ const FAQsSection = () => {
           </div>
         </div>
         <div className="faq-image">
-          <img src={"/image.png"} alt="FAQ Illustration" />
+          <img src={`${process.env.PUBLIC_URL}/image.png`} alt="FAQ Illustration" />
         </div>
       </div>
     </section>

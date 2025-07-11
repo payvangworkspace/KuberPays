@@ -38,7 +38,7 @@ const PaymentGatewayInfo = () => {
         {/* RIGHT: Image */}
         <div className="payment-info-image">
           <img
-            src="/payment-gateway.jpg"
+            src={`${process.env.PUBLIC_URL}/payment-gateway.jpg`}
             alt="Payment Gateway Illustration"
           />
         </div>

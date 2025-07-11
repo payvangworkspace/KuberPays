@@ -26,7 +26,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="about-image">
-                <img src="/about-us.jpg" alt="About Us" />
+                <img src={`${process.env.PUBLIC_URL}/about-us.jpg`} alt="About Us" />
 
                 </div>
             </div>

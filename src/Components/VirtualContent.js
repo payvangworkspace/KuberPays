@@ -24,7 +24,7 @@ const VirtualContent = () => {
           </p>
 
           <div className="virtual-account-image">
-          <img src={"/about-us.jpg"} alt="Virtual Account Process" />
+          <img src={`${process.env.PUBLIC_URL}/about-us.jpg`} alt="Virtual Account Process" />
         </div>
   
           <ul className="virtual-account-benefits">
@@ -49,7 +49,7 @@ const VirtualContent = () => {
           </ul>
         </div>
         <div className="virtual-account-image">
-        <img src={"/Virtual-Accounts.jpg"} alt="VAM Dashboard" />
+        <img src={`${process.env.PUBLIC_URL}/Virtual-Accounts.jpg`} alt="VAM Dashboard" />
       </div>
 
       {/* <div className="signup-container">
