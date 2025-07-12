@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
 import Navbar from "./Components/Navbar";
@@ -29,6 +29,7 @@ import PrivacyPolicy from "./Components/PrivacyPolicy";
 import FAQsSection from "./Components/FAQsSection";
 import ContactForm from "./Components/ContactForm";
 import SignUp from "./Components/SignUp";
+import Login from "./Components/Login";
 
 // Individual Route Components
 function Home() {
@@ -201,6 +202,25 @@ function Payment() {
   );
 }
 
+
+function LoginComponent(){
+
+  return(
+    <>
+    <Navbar/>
+    <Login/>
+    <Footer/>
+    
+    
+    
+    </>
+  )
+
+
+}
+
+
+
 function FAQsComponent() {
   document.title = "FAQs | Kuberpays";
   return (
@@ -236,6 +256,7 @@ function App() {
         <Route path="/terms" element={<TandC />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/signup" element={<SignupComponent />} />
+        <Route path="/login" element={<LoginComponent/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -45,6 +45,8 @@ const Navbar = () => {
     },
    
     { title: "Developers", submenu: [], link: "/developers" },
+     { title: "Login", submenu: [], link: "/login" },
+      { title: "Signup", submenu: [], link: "/signup" },
   ];
 
   return (
