@@ -18,7 +18,7 @@ const contactDetails = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Visit Us",
-    info: "Kuber Pays, 113 Lakeshore Rd, West, Suite-163, Mississauga ON L5H 1E9  Bifro House, Canada",
+    info: "113 Lakeshore Rd, West, Suite-163, Mississauga ON L5H 1E9  Bifro House, Canada",
   },
 ];
 

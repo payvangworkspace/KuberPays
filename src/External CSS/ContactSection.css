@@ -8,6 +8,7 @@
     padding: 60px 20px;
     background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
     justify-items: center;
+    /* border: 2px solid green; */
 }
 
 /* ================================
@@ -26,6 +27,9 @@
     transition: all 0.4s ease-in-out;
     cursor: pointer;
     max-width: 350px;
+    /* border: 2px solid red; */
+    min-height: 140px;
+    min-width: 350px
 }
 
 .contact-section__card:hover {
