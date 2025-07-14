@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/KuberPays/static/css/main.54b3e8f7.css",
+    "main.css": "/KuberPays/static/css/main.2b55c0fe.css",
     "main.js": "/KuberPays/static/js/main.6ea8b783.js",
     "static/js/453.1d1f8502.chunk.js": "/KuberPays/static/js/453.1d1f8502.chunk.js",
     "static/media/herosection2.jpg": "/KuberPays/static/media/herosection2.903eb148dadb9d960797.jpg",
     "static/media/common1.jpg": "/KuberPays/static/media/common1.5a2a1deb1dbaaa4a6763.jpg",
     "index.html": "/KuberPays/index.html",
-    "main.54b3e8f7.css.map": "/KuberPays/static/css/main.54b3e8f7.css.map",
+    "main.2b55c0fe.css.map": "/KuberPays/static/css/main.2b55c0fe.css.map",
     "main.6ea8b783.js.map": "/KuberPays/static/js/main.6ea8b783.js.map",
     "453.1d1f8502.chunk.js.map": "/KuberPays/static/js/453.1d1f8502.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54b3e8f7.css",
+    "static/css/main.2b55c0fe.css",
     "static/js/main.6ea8b783.js"
   ]
 }
