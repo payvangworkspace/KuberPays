@@ -1,17 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaApple, FaPython, FaGem, FaCodeBranch, FaJs, FaJava, FaAndroid, FaPhp } from "react-icons/fa";
+import {
+  FaApple,
+  FaPython,
+  FaGem,
+  FaCodeBranch,
+  FaJsSquare,
+  FaJava,
+  FaAndroid,
+  FaPhp
+} from "react-icons/fa";
 import "../External CSS/IntegrationSection.css";
 
 const techItems = [
-  { name: "iOS", icon: <FaApple className="icon apple" />, color: "purple" },
-  { name: "Python", icon: <FaPython className="icon python" />, color: "yellow" },
-  { name: "Ruby", icon: <FaGem className="icon ruby" />, color: "green" },
-  { name: "Webhooks", icon: <FaCodeBranch className="icon webhook" />, color: "blue" },
-  { name: "Javascript", icon: <FaJs className="icon javascript" />, color: "indigo" },
-  { name: "Java", icon: <FaJava className="icon java" />, color: "orange" },
-  { name: "Android", icon: <FaAndroid className="icon android" />, color: "teal" },
-  { name: "PHP", icon: <FaPhp className="icon php" />, color: "red" }
+  { name: "iOS", icon: <FaApple />, color: "#000000" },
+  { name: "Python", icon: <FaPython />, color: "#3776AB" },
+  { name: "Ruby", icon: <FaGem />, color: "#CC342D" },
+  { name: "Webhooks", icon: <FaCodeBranch />, color: "#6c757d" },
+  { name: "JavaScript", icon: <FaJsSquare />, color: "#F7DF1E" },
+  { name: "Java", icon: <FaJava />, color: "#007396" },
+  { name: "Android", icon: <FaAndroid />, color: "#3DDC84" },
+  { name: "PHP", icon: <FaPhp />, color: "#777BB4" }
 ];
 
 const IntegrationSection = () => {
@@ -35,17 +44,20 @@ const IntegrationSection = () => {
             Comprehensive Documentation, reference apps, and more… Integrate your site in real-time and start payment collection instantly.
           </p>
         </div>
+        <div className="dev-tech-icon-parent">
         <div className="dev-technology-icons">
           {techItems.map((tech, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.1 }}
-              className={`dev-tech-item ${tech.color}`}
+              className="dev-tech-item"
+              style={{ color: tech.color }}
             >
-              {tech.icon}
+              <div className="dev-icon">{tech.icon}</div>
               <p className="dev-tech-name">{tech.name}</p>
             </motion.div>
           ))}
+        </div>
         </div>
       </div>
     </div>

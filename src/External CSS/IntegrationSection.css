@@ -2,161 +2,180 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 50px 20px;
+  background: #f9f9f9;
+  /* border: 2px solid red; */
 }
- 
+
 .dev-integration-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  background: white;
+  align-items: flex-start;
+  background: #ffffff;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 1300px;
+  gap: 40px;
+  /* border: 2px solid orange; */
 }
- 
+
 .dev-integration-content {
-  width: 50%;
+  width: 45%;
   text-align: left;
+  /* border: 2px solid green; */
 }
- 
+
 .dev-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #222;
-  margin-bottom: 15px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 20px;
 }
- 
-.dev-description, .dev-sub-heading, .dev-final-note {
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 15px;
+
+.dev-description,
+.dev-sub-heading,
+.dev-final-note {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 18px;
 }
- 
+
+.dev-sub-heading {
+  font-weight: 600;
+  color: #333;
+}
+
 .dev-integration-list {
   list-style-type: disc;
   padding-left: 20px;
-  color: #333;
-  font-size: 1.1rem;
+  color: #444;
+  font-size: 1.05rem;
   margin-bottom: 20px;
+  line-height: 1.6;
+  /* border: 2px solid green; */
 }
- 
+
 .dev-technology-icons {
-  width: 50%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  align-items: center;
+  /* border: 2px solid blue; */
 }
- 
+
 .dev-tech-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px 10px;
   transition: all 0.3s ease-in-out;
-  background: rgba(255, 255, 255, 0.2);
-  border: none;
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-}
- 
-.dev-tech-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
- 
-.dev-icon {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
- 
-.dev-tech-name {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #222;
+  height: 135px;
+  width: 110px;
 }
 
+.dev-tech-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dev-icon {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.dev-tech-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive Design */
 @media (max-width: 1024px) {
   .dev-integration-card {
     flex-direction: column;
-    width: 90%;
     padding: 30px;
   }
 
-  .dev-integration-content, .dev-technology-icons {
+  .dev-integration-content,
+  .dev-technology-icons {
     width: 100%;
     text-align: center;
   }
 
+  .dev-integration-content {
+    margin-bottom: 30px;
+  }
+
   .dev-technology-icons {
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
-  .dev-integration-container {
-    padding: 30px;
-  }
-
   .dev-title {
     font-size: 2rem;
   }
 
-  .dev-description, .dev-sub-heading, .dev-final-note {
-    font-size: 1rem;
-  }
-
+  .dev-description,
+  .dev-sub-heading,
+  .dev-final-note,
   .dev-integration-list {
     font-size: 1rem;
-    padding-left: 15px;
-  }
-
-  .dev-technology-icons {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .dev-tech-item {
-    padding: 15px;
   }
 
   .dev-icon {
     font-size: 2.5rem;
   }
+
+  .dev-tech-item {
+    width: 100px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 480px) {
-  .dev-integration-card {
-    padding: 20px;
-  }
-
   .dev-title {
     font-size: 1.8rem;
   }
 
-  .dev-description, .dev-sub-heading, .dev-final-note {
-    font-size: 0.9rem;
-  }
-
+  .dev-description,
+  .dev-sub-heading,
+  .dev-final-note,
   .dev-integration-list {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .dev-technology-icons {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 15px;
   }
 
   .dev-tech-item {
+    width: 90px;
+    height: 110px;
     padding: 10px;
   }
 
   .dev-icon {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
+}
+.dev-tech-icon-parent{
+  /* border: 2px solid red; */
+  width: 55%;
+  height: 68vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
