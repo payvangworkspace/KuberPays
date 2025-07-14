@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/KuberPays/static/css/main.3e203f02.css",
-    "main.js": "/KuberPays/static/js/main.eaad5501.js",
+    "main.css": "/KuberPays/static/css/main.229fd304.css",
+    "main.js": "/KuberPays/static/js/main.c5540aa7.js",
     "static/js/453.1d1f8502.chunk.js": "/KuberPays/static/js/453.1d1f8502.chunk.js",
     "static/media/herosection2.jpg": "/KuberPays/static/media/herosection2.903eb148dadb9d960797.jpg",
     "static/media/common1.jpg": "/KuberPays/static/media/common1.5a2a1deb1dbaaa4a6763.jpg",
     "index.html": "/KuberPays/index.html",
-    "main.3e203f02.css.map": "/KuberPays/static/css/main.3e203f02.css.map",
-    "main.eaad5501.js.map": "/KuberPays/static/js/main.eaad5501.js.map",
+    "main.229fd304.css.map": "/KuberPays/static/css/main.229fd304.css.map",
+    "main.c5540aa7.js.map": "/KuberPays/static/js/main.c5540aa7.js.map",
     "453.1d1f8502.chunk.js.map": "/KuberPays/static/js/453.1d1f8502.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e203f02.css",
-    "static/js/main.eaad5501.js"
+    "static/css/main.229fd304.css",
+    "static/js/main.c5540aa7.js"
   ]
 }
