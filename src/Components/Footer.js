@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content container">
         <div className="footer-left">
-          <img className="logo logo-footer" src='../logo2.png'/>
+          <img className="logo logo-footer" src={`${process.env.PUBLIC_URL}/logo2.png`} />
           {/* <p>Swift Code: <strong>KUBERPAYMENT</strong></p> */}
           <p>
             <FaMapMarkerAlt className="icon" /> Kuber Pays, 113 Lakeshore Rd, West, Suite-163,<br />

@@ -48,7 +48,7 @@ const WhiteLabelContent = () => {
       </div>
 
       <div className="whitelabel-image">
-        <img src="/white-label.jpg" alt="white label process" />
+        <img src={`${process.env.PUBLIC_URL}/white-label.jpg`} alt="white label process" />
       </div>
 
     </div>

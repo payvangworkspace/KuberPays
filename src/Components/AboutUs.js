@@ -15,7 +15,7 @@ const AboutUs = () => {
 
                     <p className='distance'>
                         Our business revolves around long-term, trusted, and mutually beneficial relationships.
-                        At KPays, we hire the best to deliver the best – a team of passionate specialists within a digital world.
+                        At KuberPays, we hire the best to deliver the best – a team of passionate specialists within a digital world.
                         We believe that true intelligence finds its form in simplicity, which is why we work with our clients in mapping out secure,
                         effective, and tailored payment solutions that optimize their business growth.
                     </p>
@@ -26,7 +26,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="about-image">
-                <img src="/about-us.jpg" alt="About Us" />
+                <img src={`${process.env.PUBLIC_URL}/about-us.jpg`} alt="About Us" />
 
                 </div>
             </div>

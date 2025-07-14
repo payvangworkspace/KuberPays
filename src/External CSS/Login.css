@@ -1,0 +1,132 @@
+.kuber-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(247, 247, 247, 0.884);
+  padding: 1rem;
+}
+
+.kuber-login-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.kuber-login-box:hover {
+  transform: translateY(-5px);
+}
+
+.kuber-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+  
+}
+
+.kuber-heading {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(11, 10, 10, 0.801);
+}
+
+.kuber-subheading {
+  font-size: 14px;
+  color: rgba(11, 10, 10, 0.801);
+  margin-bottom: 1.5rem;
+}
+
+.kuber-input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+  /* border: 2px solid orange; */
+  border: 1px solid rgba(60, 49, 49, 0.734);
+  border-radius: 10px;
+}
+
+.kuber-input-icon {
+  position: absolute;
+  left: 20px;
+  /* right: 12px; */
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(11, 10, 10, 0.801);
+  font-size: 18px;
+  border:2px solid white;
+
+}
+
+.kuber-input-group input {
+  width: calc(100% - 50px);
+  padding: 12px 15px 12px 40px;
+  font-size: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color:  rgba(11, 10, 10, 0.801);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.kuber-input-group input::placeholder {
+  color:rgba(11, 10, 10, 0.801);
+}
+
+.kuber-input-group input:focus {
+  border-color: #f4a261;
+}
+
+.kuber-login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: linear-gradient(to right, #f4a261, #e76f51);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.kuber-login-btn:hover {
+  background: linear-gradient(to right, #e76f51, #d35400);
+}
+
+.kuber-forgot {
+  margin-top: 1rem;
+}
+
+.kuber-forgot a {
+  text-decoration: none;
+  color: #f4a261;
+  font-weight: 500;
+}
+
+.kuber-forgot a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .kuber-login-box {
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .kuber-logo {
+    width: 60px;
+  }
+
+  .kuber-input-group input {
+    width: calc(100% - 40px);
+  }
+}
+.kuber-input-group input:focus {
+  border-color: transparent;  /* optional if border is not needed */
+  outline: none;              /* removes browser default outline */
+  box-shadow: none;           /* if any shadow is appearing */
+}

@@ -31,7 +31,7 @@ const InvoicingContent = () => {
       </div>
 
       <div className="invoicing-image">
-        <img src={"/invoicing.jpg"} alt="Invoicing Process" />
+        <img src={`${process.env.PUBLIC_URL}/invoicing.jpg`} alt="Invoicing Process" />
       </div>
       {/* <div className="signup-container">
       <Link to="/signup" className="signup-button">Sign Up Now</Link>

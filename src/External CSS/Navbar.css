@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-logo {
-  height: 50px;
+  height: 80px;
   cursor: pointer;
 }
 
@@ -155,9 +155,12 @@ body {
 }
 
 .navbar-logo {
-  width: 160px;
+  width: 180px;
   height: auto;
+  height: 198px;
   cursor: pointer;
+  margin-top: 7px;
+  /* border: 2px solid orange; */
 }
 
 .navbar-menu {

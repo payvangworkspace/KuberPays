@@ -1,54 +1,75 @@
 /* Payment Gateway Info Section */
 
 .payment-info-section {
-  background-color: #f9fafb;
-  border-radius: 1rem;
-  padding: 2rem;
-  margin-top: 3rem;
+  background-color: #ffffff;
+  padding: 4rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  max-width: 1200px;
+  margin: 3rem auto;
 }
 
 .payment-info-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 
 .payment-info-content {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
 }
 
 .payment-info-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 1rem;
+  color: #0a2540;
+  margin-bottom: 1.2rem;
 }
 
 .payment-info-description {
   font-size: 1rem;
   color: #4b5563;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .payment-info-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.8rem;
+}
+
+.payment-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.payment-info-item .icon {
+  font-size: 1.6rem;
+  color: #0a58ca;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .payment-info-item h3 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #111827;
+  color: #1f2937;
+  margin-bottom: 0.3rem;
 }
 
 .payment-info-item p {
   font-size: 0.95rem;
   color: #6b7280;
-  margin-top: 0.25rem;
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* Image Section */
@@ -61,27 +82,72 @@
 .payment-info-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease;
 }
 
 .payment-info-image img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .payment-info-wrapper {
     flex-direction: column;
+    text-align: left;
+  }
+
+  .payment-info-section {
+    padding: 2rem 1rem;
+  }
+
+  .payment-info-title {
+    font-size: 1.7rem;
     text-align: center;
   }
 
+  .payment-info-description {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
   .payment-info-content {
-    text-align: left;
+    width: 100%;
+  }
+
+  .payment-info-list {
+    gap: 1.5rem;
+  }
+
+  .payment-info-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .payment-info-item h3 {
+    font-size: 1rem;
+  }
+
+  .payment-info-item p {
+    font-size: 0.9rem;
   }
 
   .payment-info-image {
     margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .payment-info-title {
+    font-size: 1.5rem;
+  }
+
+  .payment-info-item {
+    gap: 0.75rem;
+  }
+
+  .payment-info-item .icon {
+    font-size: 1.3rem;
   }
 }

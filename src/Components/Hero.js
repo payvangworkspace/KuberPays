@@ -15,7 +15,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-image">
-          <img src="./hero.jpg" alt="KuberPays Dashboard" />
+          <img src={`${process.env.PUBLIC_URL}/hero.jpg`} alt="KuberPays Dashboard" />
         </div>
       </div>
     </section>

@@ -1,436 +1,265 @@
-// <<<<<<< feature
-
-// import './App.css';
-// import ContactSection from './Components/ContactSection';
-// import Footer from './Components/Footer';
-// import Hero from './Components/Hero';
-// import Navbar from './Components/Navbar';
-// import { BrowserRouter } from 'react-router-dom';
-// import { Routes } from 'react-router-dom';
-// import { Route } from 'react-router-dom';
-// import InnovationSection from './Components/InnovationSection';
-// import EnterpriseSuite from './Components/EnterpriseSuite';
-// import IndustriesSection from './Components/IndustriesSection';
-// import AnimatedStats from './Components/AnimatedStats';
-// import PaymentGatewayInfo from './Components/PaymentGatewayInfo';
-// import PaymentGatewayHero from './Components/PaymentGatewayHero';
-// import IntegrationSection from './Components/IntegrationSection';
-// import AboutUsBanner from './Components/AboutUsBanner';
-// import AboutUs from './Components/AboutUs';
-// import { InvoiceBanner } from './Components/InvoiceBanner';
-// import InvoicingContent from './Components/InvoiceContent';
-// import BusinessCreateAccount from './Components/BusinessCreateAccount';
-// import { VirtualBanner } from './Components/VirtualBanner';
-// import VirtualContent from './Components/VirtualContent';
-// import { WhiteLabelBanner } from './Components/WhiteLabelBanner';
-// import WhiteLabelContent from './Components/WhiteLabelContent';
-// import CommonBanner from './Components/CommonBanner';
-// import CardSlider from './Components/CardSlider';
-// import Pricing from './Components/Pricing';
-// import TermsAndConditions from './Components/TermsAndConditions';
-// import PrivacyPolicy from './Components/PrivacyPolicy';
-
-
-// function Home(){
-//   document.title="Home | Kuberpays"
-//   return(
-// <>
-// <Navbar/>
-// <Hero/>
-// <ContactSection/>
-// <InnovationSection/>
-// <EnterpriseSuite/>
-// <IndustriesSection/>
-// <AnimatedStats/>
-// <Footer/>
-// </>
-//   )
-// =======
 // import "./App.css";
-// import Contact from "./Components/Contact";
-// import ContactSection from "./Components/ContactSection";
-// import Features from "./Components/Features";
-// import Footer from "./Components/Footer";
-// import Hero from "./Components/Hero";
-// import Navbar from "./Components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Hero from "./Components/Hero";
+import ContactSection from "./Components/ContactSection";
+import InnovationSection from "./Components/InnovationSection";
+import EnterpriseSuite from "./Components/EnterpriseSuite";
+import IndustriesSection from "./Components/IndustriesSection";
+import AnimatedStats from "./Components/AnimatedStats";
+import PaymentGatewayInfo from "./Components/PaymentGatewayInfo";
+import PaymentGatewayHero from "./Components/PaymentGatewayHero";
+import IntegrationSection from "./Components/IntegrationSection";
+import AboutUsBanner from "./Components/AboutUsBanner";
+import AboutUs from "./Components/AboutUs";
+import { InvoiceBanner } from "./Components/InvoiceBanner";
+import InvoicingContent from "./Components/InvoiceContent";
+import BusinessCreateAccount from "./Components/BusinessCreateAccount";
+import { VirtualBanner } from "./Components/VirtualBanner";
+import VirtualContent from "./Components/VirtualContent";
+import { WhiteLabelBanner } from "./Components/WhiteLabelBanner";
+import WhiteLabelContent from "./Components/WhiteLabelContent";
+import CommonBanner from "./Components/CommonBanner";
+import CardSlider from "./Components/CardSlider";
+import Pricing from "./Components/Pricing";
+import TermsAndConditions from "./Components/TermsAndConditions";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
+import FAQsSection from "./Components/FAQsSection";
+import ContactForm from "./Components/ContactForm";
+import SignUp from "./Components/SignUp";
+import Login from "./Components/Login";
 
-// import { BrowserRouter } from "react-router-dom";
-// import { Routes } from "react-router-dom";
-// import { Route } from "react-router-dom";
-// import InnovationSection from "./Components/InnovationSection";
-// import EnterpriseSuite from "./Components/EnterpriseSuite";
-// import IndustriesSection from "./Components/IndustriesSection";
-// import AnimatedStats from "./Components/AnimatedStats";
+// Individual Route Components
+function Home() {
+  document.title = "Home | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <ContactSection />
+      <InnovationSection />
+      <EnterpriseSuite />
+      <IndustriesSection />
+      <AnimatedStats />
+      <Footer />
+    </>
+  );
+}
 
-// import DevelopersSection from "./Components/DevelopersSection";
+function SignupComponent() {
+  document.title = "Signup | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <SignUp />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-// import PaymentGatewayInfo from "./Components/PaymentGatewayInfo";
-// import PaymentGatewayHero from "./Components/PaymentGatewayHero";
-// import IntegrationSection from "./Components/IntegrationSection";
-// import AboutUsBanner from "./Components/AboutUsBanner";
-// import AboutUs from "./Components/AboutUs";
-// import { InvoiceBanner } from "./Components/InvoiceBanner";
-// import InvoicingContent from "./Components/InvoiceContent";
+function DevelopersComponent() {
+  document.title = "Devoper Integration | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <CommonBanner title="Integrations for Developers" imageUrl="./pexels-divinetechygirl.jpg" />
+      <IntegrationSection />
+      <Footer />
+    </>
+  );
+}
 
-// import BusinessCreateAccount from "./Components/BusinessCreateAccount";
-// import { VirtualBanner } from "./Components/VirtualBanner";
-// import VirtualContent from "./Components/VirtualContent";
-// import { WhiteLabelBanner } from "./Components/WhiteLabelBanner";
-// import WhiteLabelContent from "./Components/WhiteLabelContent";
+function PricingComponent() {
+  document.title = "Pricing | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <CommonBanner title="Pricing" imageUrl="./pricing.jpg" />
+      <Pricing />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-// import CommonBanner from './Components/CommonBanner';
-// import CardSlider from './Components/CardSlider';
+function TandC() {
+  document.title = "Terms & Conditions | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <CommonBanner title="Terms & Conditions" imageUrl="./terms.jpg" />
+      <TermsAndConditions />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-// import Pricing from './Components/Pricing';
-// import FAQsSection from "./Components/FAQsSection";
+function Privacy() {
+  document.title = "Privacy Policy | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <CommonBanner title="Privacy Policy" imageUrl="./privacy.jpg" />
+      <PrivacyPolicy />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
+function AboutUsComponent() {
+  document.title = "About Us | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <AboutUsBanner />
+      <AboutUs />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-// function Home() {
-//   document.title = "Home | Kuberpays";
-//   return (
-//     <>
-//       <Navbar />
-//       <Hero />
-//       <ContactSection />
-//       <InnovationSection />
-//       <EnterpriseSuite />
-//       <IndustriesSection />
-//       {/* <RequestCallback/> */}
-//       {/* <ClientUnderstanding/> */}
-//       <AnimatedStats />
-//       <Footer />
-//     </>
-//   );
-// >>>>>>> Nitesh2
-// }
+function InvoiceComponent() {
+  document.title = "Invoice | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <InvoiceBanner />
+      <InvoicingContent />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-// function DevelopersComponent() {
-//   return (
-// <<<<<<< feature
-// <>
-// <Navbar/>
-// <IntegrationSection/>
-// <Footer/>
-// </>
-//   )
-// =======
-//     <>
-//       <Navbar />
-//       {/* <DevelopersSection/> */}
-//       <IntegrationSection />
-//       <Footer />
-//     </>
-//   );
-// >>>>>>> Nitesh2
-// }
+function ContactUs() {
+  document.title = "Contact Us | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <CommonBanner title="Contact Us" imageUrl="./contact-us-bg.jpg" />
+      <ContactSection />
+      <ContactForm />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-// function Pricingcomponent() {
-//   return (
-//     <>
-// <<<<<<< feature
-//   <Navbar/>
-//   <CommonBanner title="Pricing"imageUrl="./Pricing.jpg"/>
-//   <Pricing/>
-//   <BusinessCreateAccount/>
-//   <Footer/>
-//   </>
-//   )
-// }
+function VirtualAccountComponent() {
+  document.title = "Virtual Account | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <VirtualBanner />
+      <VirtualContent />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-// function TandC(){
-//   return(
-//     <>
-//    <Navbar/>
-//    <CommonBanner title="Terms & Conditions"imageUrl="./terms.jpg"/>
-//    <TermsAndConditions/>
-//    <BusinessCreateAccount/>
-//    <Footer/>
-//     </>
-//   )
-// }
+function FeatureComponent() {
+  document.title = "Features | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <CommonBanner title="Features" imageUrl="./common1.jpg" />
+      <CardSlider />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-// function Privacy(){
-//   return(
-//     <>
-//     <Navbar/>
-//     <CommonBanner title="privacy policy"imageUrl="./privacy.jpg"/>
-//     <PrivacyPolicy/>
-//     <BusinessCreateAccount/>
-//     <Footer/>
-//     </>
-//   )
-// }
+function WhiteLabelSolutionComponent() {
+  document.title = "White Label | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <WhiteLabelBanner />
+      <WhiteLabelContent />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-
-// function AboutUsComponent(){
-//   return (
-// <>
-// <Navbar/>
-// <AboutUsBanner/>
-// <AboutUs/>
-// <BusinessCreateAccount/>
-// <Footer/>
-// </>
-//   )
-// =======
-//       <Navbar />
-//       <Pricing />
-//     </>
-//   );
-// }
-
-// function AboutUsComponent() {
-//   return (
-//     <>
-//       <Navbar />
-//       <AboutUsBanner />
-//       <AboutUs />
-//       <BusinessCreateAccount />
-//       <Footer />
-//     </>
-//   );
-// }
-
-// function InvoiceComponent() {
-//   return (
-//     <>
-//       <Navbar />
-//       <InvoiceBanner />
-//       <InvoicingContent />
-//       <BusinessCreateAccount />
-
-//       <Footer />
-//     </>
-//   );
-// >>>>>>> Nitesh2
-// }
-
-// function ContactUs() {
-//   document.title = "ContactUs | Kuberpays";
-//   return (
-//     <>
-// <<<<<<< feature
-//     <Navbar/>
-//     <InvoiceBanner/>
-//     <InvoicingContent/>
-//     <BusinessCreateAccount/> 
-//     <Footer/>
-// =======
-//       <Navbar />
-//       <ContactSection />
-//       <BusinessCreateAccount />
-//       <Footer />
-// >>>>>>> Nitesh2
-//     </>
-//   );
-// }
-
-// <<<<<<< feature
-
-// function ContactUs(){
-//   document.title="ContactUs | Kuberpays"
-//   return(
-// =======
-// function VirtualAccountComponent() {
-//   return (
-// >>>>>>> Nitesh2
-//     <>
-//       <Navbar />
-//       <VirtualBanner />
-//       <VirtualContent />
-//       <BusinessCreateAccount />
-//       <Footer />
-//     </>
-//   );
-// }
-
-// <<<<<<< feature
-// function VirtualAccountComponent(){
-//   return(
-//     <>
-//     <Navbar/>
-//     <VirtualBanner/>    
-//     <VirtualContent/>
-//     <BusinessCreateAccount/>
-//     <Footer/>
-//     </>
-//   )
-// }
+function Payment() {
+  document.title = "Payment Gateway | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <PaymentGatewayHero />
+      <PaymentGatewayInfo />
+      <Footer />
+    </>
+  );
+}
 
 
-// function FeatureComponent(){
-//   return (
-// <>
-// <Navbar/>
-// <CommonBanner title="Features" imageUrl="./common1.jpg"  />
-// <CardSlider/>
-// <BusinessCreateAccount/>
-// <Footer/>
-// </>
-//   )
-// }
+function LoginComponent(){
 
-
-// function WhiteLabelSolutionComponent(){
-//   return(
-// <>
-// <Navbar/>
-// <WhiteLabelBanner/>
-// <WhiteLabelContent/>
-// <BusinessCreateAccount/>
-// <Footer/>
-// </>
-//   )
-// }
-
-
-// function Payment(){
-//   document.title="PaymentGateway | Kuberpays"
-// =======
-// function FeatureComponent() {
-//   return (
-//     <>
-//       <Navbar />
-//       <CommonBanner title="Features" imageUrl="./common1.jpg" />
-//       <CardSlider />
-//       <BusinessCreateAccount/>
-//       <Footer/>
-//     </>
-//   );
-// }
-
-// function WhiteLabelSolutionComponent() {
-//   return (
-//     <>
-//       <Navbar />
-//       <WhiteLabelBanner />
-//       <WhiteLabelContent />
-//       <BusinessCreateAccount />
-//       <Footer />
-//     </>
-//   );
-// }
-
-// function Payment() {
-//   document.title = "PaymentGateway | Kuberpays";
-//   return (
-//     <>
-//       <Navbar />
-//       <PaymentGatewayHero />
-//       <PaymentGatewayInfo />
-//       <Footer />
-//     </>
-//   );
-// }
-
-
-// function TermsAndConditionComponent(){
-// >>>>>>> Nitesh2
-//   return(
-//     <>
-//     <Navbar/>
-//     <CommonBanner title="Terms & Conditions" imageUrl="./.jpg"  />
+  return(
+    <>
+    <Navbar/>
+    <Login/>
+    <Footer/>
     
     
     
-//     </>
-//   )
-// }
+    </>
+  )
 
 
-// <<<<<<< feature
-// function FAQsComponent(){
-//   return(
-// <>
-// <Navbar/>
-// <CommonBanner title="FAQS"  imageUrl="./features.jpg"/>
-// <BusinessCreateAccount/>
-// <Footer/>
-// </>
-//   )
-// }
+}
 
 
-// function App() {
-//   return (
-//  <div>
-//   <BrowserRouter>     
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//             <Route path="/developers" element={<DevelopersComponent />} />
-//         <Route path="/payment-gateway" element={<Payment />} />
-//         <Route path="/about" element={<AboutUsComponent/>}/>
-//         <Route path="/invoices" element={<InvoiceComponent/>}/>
 
-//         <Route path="/contact" element={<ContactUs/>}/>
-//          <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>
-//          <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
-//                  <Route path="/features" element={<FeatureComponent/>}/>
-//                                  <Route path="/faqs" element={<FAQsComponent/>}/> =====
+function FAQsComponent() {
+  document.title = "FAQs | Kuberpays";
+  return (
+    <>
+      <Navbar />
+      <CommonBanner title="FAQs" imageUrl="./banner3.jpg" />
+      <FAQsSection />
+      <BusinessCreateAccount />
+      <Footer />
+    </>
+  );
+}
 
-//          <Route path="/contact" element={<ContactUs/>}/>
+// App Component
+function App() {
+  const basename = process.env.NODE_ENV === "production" ? "/KuberPays" : "/";
 
-//         <Route path="/virtual-account" element={<VirtualAccountComponent/>}/>        <Route path="/white-label" element={<WhiteLabelSolutionComponent/>}/>
-//          <Route path="/pricing" element={<Pricingcomponent/>}/>
-//          <Route path="/terms" element={<TandC/>}/>
-//           <Route path="/privacy-policy" element={<Privacy/>}/>
+  return (
+    <BrowserRouter basename={basename}>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/developers" element={<DevelopersComponent />} />
+        <Route path="/payment-gateway" element={<Payment />} />
+        <Route path="/about" element={<AboutUsComponent />} />
+        <Route path="/invoices" element={<InvoiceComponent />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/virtual-account" element={<VirtualAccountComponent />} />
+        <Route path="/white-label" element={<WhiteLabelSolutionComponent />} />
+        <Route path="/features" element={<FeatureComponent />} />
+        <Route path="/faqs" element={<FAQsComponent />} />
+        <Route path="/pricing" element={<PricingComponent />} />
+        <Route path="/terms" element={<TandC />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
+        <Route path="/signup" element={<SignupComponent />} />
+        <Route path="/login" element={<LoginComponent/>} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-
-//        </Routes>
-// =======
-
-
-// function FAQsComponent() {
-//   return (
-//     <>
-//       <Navbar />
-//       <CommonBanner title="FAQS" imageUrl="./banner3.jpg" />
-//       <FAQsSection/>
-//     </>
-//   );
-// }
-
-// function App() {
-//   return (
-//     <div>
-//       <BrowserRouter>
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/developers" element={<DevelopersComponent />} />
-//           <Route path="/payment-gateway" element={<Payment />} />
-//           <Route path="/about" element={<AboutUsComponent />} />
-//           <Route path="/invoices" element={<InvoiceComponent />} />
-//            <Route path="/contact" element={<ContactUs />} />
-    
-//           <Route
-//             path="/virtual-account"
-//             element={<VirtualAccountComponent />}
-//           />
-    
-//           <Route
-//             path="/white-label"
-//             element={<WhiteLabelSolutionComponent />}
-//           />
-//           <Route path="/features" element={<FeatureComponent />} />
-//           <Route path="/faqs" element={<FAQsComponent />} />
-//          <Route path="/contact" element={<ContactUs />} />
-       
-//           <Route
-//             path="/virtual-account"
-//             element={<VirtualAccountComponent />}
-//           />
-         
-//           <Route
-//             path="/white-label"
-//             element={<WhiteLabelSolutionComponent />}
-//           />
-//            <Route path="/pricing" element={<Pricingcomponent />} />
-//               <Route path="/terms" element={<TermsAndConditionComponent />} />
-//         </Routes>
-// >>>>>>> Nitesh2
-//       </BrowserRouter>
-//     </div>
-//   );
-// }
-
-// export default App;
+export default App;
