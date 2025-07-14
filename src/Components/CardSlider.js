@@ -73,7 +73,7 @@ const CardSlider = () => {
 
         scrollSlider(350 * direction);
       }
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [direction]);
